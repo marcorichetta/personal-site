@@ -1,6 +1,7 @@
 {
-  "name": "with-tailwindcss",
-  "version": "1.0.0",
+  "name": "personal-site",
+  "version": "0.1.2",
+  "license": "ISC",
   "scripts": {
     "dev": "next",
     "build": "next build",
