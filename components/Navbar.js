@@ -20,7 +20,7 @@ const Navbar = () => {
             <ul className='md:mr-2 text-sm md:text-base'>
                 {routes.map(({ to, title }) => (
                     <Link href={to} key={title}>
-                        <a className='py-4 px-2 text-blue-500 no-underline text-md'>{title}</a>
+                        <a className='py-4 px-2 text-blue-500 no-underline hover:underline text-md'>{title}</a>
                     </Link>
                 ))}
             </ul>
