@@ -1,5 +1,6 @@
 import Layout from "../components/Layout";
 import Techs from "../components/Techs";
+import Social from "../components/Social";
 
 export default () => {
 
@@ -8,9 +9,12 @@ export default () => {
       <Layout>
         <div className='flex flex-col text-center mb-4 justify-center font-bold text-2xl md:text-3xl lg:text-4xl'>
           Hola, me llamo Marco
-        <br />
-        y soy programador de aplicaciones web 💻 
-      </div>
+          <br />
+          y soy programador de aplicaciones web 💻 
+          <br />
+          
+          <Social />
+        </div>
 
         <h1 className='text-xl md:text-2xl lg:text-3xl'>Sobre mí</h1>
         <section className='flex flex-wrap text-justify mb-4 px-2'>

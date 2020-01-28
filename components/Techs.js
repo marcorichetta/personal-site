@@ -8,7 +8,7 @@ const Techs = () => {
             <h1 className='text-xl md:text-2xl lg:text-3xl'>Tecnologías que uso</h1>
             <section className='flex flex-wrap text-justify mb-4'>
                 {techs.map(tech =>
-                    <div className='w-1/3 px-8'>
+                    <div key={tech.title} className='w-1/3 px-8'>
                         <h3 className='text-lg md:text-xl lg:text-2xl mb-2'>{tech.title}</h3>
                         <ul>
                             {tech.data.map(t =>

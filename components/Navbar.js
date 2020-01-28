@@ -3,10 +3,7 @@ import Link from 'next/link'
 const Navbar = () => {
 
     const routes = [
-        { to: '/about', title: 'About' },
-        { to: '/projects', title: 'Projects' },
-        { to: '/cv', title: 'CV' },
-        { to: '/contact', title: 'Contact' },
+        { to: '', title: 'CV', openOn: '_blank' },
     ]
 
     return (
@@ -18,11 +15,12 @@ const Navbar = () => {
             </ul>
 
             <ul className='md:mr-2 text-sm md:text-base'>
-                {routes.map(({ to, title }) => (
-                    <Link href={to} key={title}>
-                        <a className='py-4 px-2 text-blue-500 no-underline hover:underline text-md'>{title}</a>
-                    </Link>
-                ))}
+                <a 
+                    target='_blank' 
+                    href='https://drive.google.com/open?id=1x7Fn0SiH0IwkcpaI-ISyn6HXdJN8OguV'
+                    className='py-4 px-2 text-blue-500 no-underline hover:underline text-md'>
+                        CV
+                </a>
             </ul>
         </nav>
     )
