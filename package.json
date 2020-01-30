@@ -1,7 +1,14 @@
 {
   "name": "personal-site",
-  "version": "0.1.2",
-  "license": "ISC",
+  "version": "0.1.0",
+  "author": {
+    "name": "Marco Richetta"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcorichetta/personal-site.git"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
