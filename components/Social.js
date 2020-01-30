@@ -1,13 +1,13 @@
 import React from 'react'
-import links from "../social.js"
+import links from "../data/social.js"
 
 const Social = () => {
 
     return (
-        <div>
+        <div className='py-4'>
             {links.map(({ name, icon, url }) =>
                 <a key={name} href={url} target='_blank'>
-                    <img className='inline sm:lg' src={`icons/${icon}.svg`}></img>
+                    <img title={name} className='inline pr-2 h-10 invert-color' src={`icons/social/${icon}.svg`}></img>
                 </a>
             )}
         </div>

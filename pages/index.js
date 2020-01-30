@@ -8,11 +8,14 @@ export default () => {
     <>
       <Layout>
         <div className='flex flex-col text-center mb-4 justify-center font-bold text-2xl md:text-3xl lg:text-4xl'>
-          Hola, me llamo Marco
+          <img className='h-32' src='images/undraw_coding.svg'></img>
+          <div className='focus-in-contract'>
+            Marco Richetta
           <br />
-          y soy programador de aplicaciones web 💻 
+            Programador de aplicaciones web 💻
           <br />
-          
+          </div>
+
           <Social />
         </div>
 
@@ -35,7 +38,7 @@ export default () => {
             <p>
               Estoy adentrándome en el ecosistema de React por los beneficios que provee para la creación de UIs, pudiendo
               definir componentes reutilizables y manejar el estado de las aplicaciones de una manera consistente.
-            </p>            
+            </p>
             <br />
             <p>
               Mi objetivo principal actualmente es el de familiarizarme con el ciclo completo de desarrollo de una aplicación web, desde el análisis y modelado del sistema, pasando por el desarrollo, implementación, testing y deployment al usuario final. (CI/CD)
@@ -43,7 +46,7 @@ export default () => {
           </div>
         </section>
 
-        <Techs />        
+        <Techs />
 
 
       </Layout>

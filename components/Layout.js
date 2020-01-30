@@ -11,7 +11,7 @@ export default ({ children, title = 'Marco Richetta - Programador' }) => {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <div className="flex flex-col justify-between min-h-screen text-gray-300 bg-gray-900">
+      <div className="flex flex-col justify-between min-h-screen text-gray-300">
         <Navbar />
         <main className="container mx-auto p-4">
           {children}

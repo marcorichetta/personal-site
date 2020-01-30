@@ -1,7 +1,7 @@
-# Personal site
+# My personal site
 
-This is a site made using [Tailwind CSS](https://tailwindcss.com) with a [Next.js](https://nextjs.org/) project.
+Sitio personal hecho con [Tailwind CSS](https://tailwindcss.com) y [Next.js](https://nextjs.org/).
 
-## Deploy your own
+## Hacé el tuyo
 
-You can find the instructions to use Tailwind CSS with Next.js [here](https://github.com/zeit/next.js/tree/canary/examples/with-tailwindcss)
+Podés encontrar las instrucciones para comenzar un proyecto similar [acá](https://github.com/zeit/next.js/tree/canary/examples/with-tailwindcss)
