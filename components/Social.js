@@ -6,8 +6,8 @@ const Social = () => {
     return (
         <div className='py-4'>
             {links.map(({ name, icon, url }) =>
-                <a key={name} href={url} target='_blank'>
-                    <img title={name} className='inline pr-2 h-10 invert-color' src={`icons/social/${icon}.svg`}></img>
+                <a key={name} href={url} target='_blank' rel='external'>
+                    <img title={name} className='inline px-1 h-10 invert-color' src={`icons/social/${icon}.svg`}></img>
                 </a>
             )}
         </div>

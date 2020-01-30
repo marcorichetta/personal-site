@@ -9,10 +9,10 @@ export default () => {
       <Layout>
         <div className='flex flex-col text-center mb-4 justify-center font-bold text-2xl md:text-3xl lg:text-4xl'>
           <img className='h-32' src='images/undraw_coding.svg'></img>
-          <div className='focus-in-contract'>
-            Marco Richetta
+          <div>
+            Hola, soy Marco
           <br />
-            Programador de aplicaciones web 💻
+          y programo aplicaciones web 💻
           <br />
           </div>
 
@@ -41,7 +41,8 @@ export default () => {
             </p>
             <br />
             <p>
-              Mi objetivo principal actualmente es el de familiarizarme con el ciclo completo de desarrollo de una aplicación web, desde el análisis y modelado del sistema, pasando por el desarrollo, implementación, testing y deployment al usuario final. (CI/CD)
+              También estoy aprendiendo Typescript para detectar errores a través de su sistema de tipos
+              y así poder desarrollar aplicaciones más seguras.  
             </p>
           </div>
         </section>

@@ -21,7 +21,7 @@ export default [
     },
     {
         "name": "Curriculum",
-        "icon": "cv",
+        "icon": "pdf",
         "url": "https://drive.google.com/open?id=1x7Fn0SiH0IwkcpaI-ISyn6HXdJN8OguV"
     }
 ]
