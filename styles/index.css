@@ -14,6 +14,7 @@
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: 
       url('/fonts/lato-regular.woff2') format('woff2'),
       url('/fonts/lato-regular.woff') format('woff'),
