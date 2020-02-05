@@ -17,7 +17,7 @@ export default [
     {
         "name": "Gmail",
         "icon": "mail",
-        "url": "mailto:marcorichetta@gmail.com?subject=Contacto desde tu página"
+        "url": "mailto:marcorichetta@gmail.com"
     },
     {
         "name": "Curriculum",

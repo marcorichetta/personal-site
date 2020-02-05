@@ -4,53 +4,96 @@
 /* purgecss end ignore */
 
 #NextApp {
-  font-family: 'Lato';
-  background: #0575E6;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #0575E6, #021B79);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #0575E6, #021B79); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: "Lato";
+	background: #0575e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to bottom,
+		#0575e6,
+		#021b79
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		#0575e6,
+		#021b79
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 @font-face {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: 
-      url('/fonts/lato-regular.woff2') format('woff2'),
-      url('/fonts/lato-regular.woff') format('woff'),
-      url('/fonts/lato-bold.woff2') format('woff2'),
-      url('/fonts/lato-bold.woff') format('woff'),
-      url('/fonts/lato-black.woff2') format('woff2'),
-      url('/fonts/lato-black.woff') format('woff');
+	font-family: "Lato";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/lato-regular.woff2") format("woff2"),
+		url("/fonts/lato-regular.woff") format("woff"),
+		url("/fonts/lato-bold.woff2") format("woff2"), url("/fonts/lato-bold.woff") format("woff"),
+		url("/fonts/lato-black.woff2") format("woff2"), url("/fonts/lato-black.woff") format("woff");
 }
 
+/* Customize highlighted text */
+:not(img)::selection {
+	background: #ffed86;
+	color: #373737;
+}
+
+/* Invert icons color */
 .invert-color {
-  transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .invert-color:hover {
-  filter: invert(90%);
+	filter: invert(90%);
 }
+
+/**
+ * ----------------------------------------
+ * Hover link styles - https://codepen.io/origine/pen/KVzpYm
+ * ----------------------------------------
+ */
+.link {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.hover-1:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: #d8e431;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	transition: transform 0.3s;
+}
+
+.hover-1:hover:after {
+	transform-origin: bottom left;
+	transform: scaleX(1);
+}
+
 /**
  * ----------------------------------------
  * animation focus-in-contract
  * ----------------------------------------
  */
-/* @keyframes focus-in-contract {
-  0% {
-    letter-spacing: 1em;
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
+@keyframes focus-in-contract {
+	0% {
+		letter-spacing: 1em;
+		filter: blur(12px);
+		opacity: 0;
+	}
+	100% {
+		filter: blur(0px);
+		opacity: 1;
+	}
 }
 
-
 .focus-in-contract {
-  animation: focus-in-contract 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) .5s both;
-} */
+	animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+}
 
 @tailwind utilities;
