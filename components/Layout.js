@@ -21,7 +21,7 @@ export default ({ children, title = "Marco Richetta - Programador Web" }) => {
 				<meta property="og:description" content="Programador web de Córdoba, Argentina" />
 				<meta
 					property="og:image"
-					content="/images/undraw_programming.png"
+					content="https://marcorichetta.now.sh/images/undraw_programming.png"
 				/>
 
 				{/* Twitter */}
@@ -34,7 +34,7 @@ export default ({ children, title = "Marco Richetta - Programador Web" }) => {
 				/>
 				<meta
 					property="twitter:image"
-					content="/images/undraw_programming.png"
+					content="https://marcorichetta.now.sh/images/undraw_programming.png"
 				/>
 
 				{/* Favicons */}
