@@ -1,4 +1,3 @@
-
 const Footer = () => (
     <footer className="p-4 text-center text-gray-400 text-xs transition-colors">
         &copy; Marco Richetta {new Date().getFullYear()}

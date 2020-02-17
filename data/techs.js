@@ -66,7 +66,7 @@ export default [
         ]
     },
     {
-        title: "Otros",
+        title: "Varios",
         data: [
             {
                 "name": "Manjaro Linux",

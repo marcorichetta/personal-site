@@ -4,7 +4,7 @@ import techs from "../data/techs.js";
 const Techs = () => {
   return (
 		<>
-			<h1 className="text-xl md:text-2xl lg:text-3xl">Tecnologías que uso</h1>
+			<h1 className="text-xl md:text-2xl lg:text-3xl">Tecnologías que utilizo</h1>
 			<section className="flex flex-wrap text-justify mb-4">
 				{techs.map(tech => (
 					<div key={tech.title} className="w-1/2 md:w-1/3 px-8 my-2">
