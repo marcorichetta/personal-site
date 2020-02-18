@@ -22,10 +22,10 @@ export default () => {
 					<Social />
 				</section>
 
-				<section className="text-center mx-auto max-w-lg text-md md:text-xl mb-4">
-					Hago aplicaciones web con <b>React</b> y <b>TailwindCSS</b>. Actualmente me
-					encuentro aprendiendo <b>Typescript</b> para agregar más robustez al desarrollo
-					de mis apps.
+				<section className="text-center mx-auto max-w-lg text-md md:text-xl mb-8">
+					La idea de este sitio es centralizar la información sobre mí y sobre los
+					proyectos en los que trabaje.
+					<br />
 				</section>
 
 				<Techs />

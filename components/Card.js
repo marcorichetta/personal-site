@@ -9,7 +9,6 @@ const Card = ({ name, url, source, imgSource, description, tags }) => {
 			<img
 				className="w-auto h-auto"
 				src={`images/projects/${imgSource}.jpg`}
-				alt="Sunset in the mountains"
 			/>
 			<div className="px-6 py-4">
 				<div className="text-gray-700 font-bold text-xl mb-2">{name}</div>

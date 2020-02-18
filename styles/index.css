@@ -51,6 +51,11 @@
 	justify-items: center;
 }
 
+.highlight {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
 /**
  * ----------------------------------------
  * Hover link styles - https://codepen.io/origine/pen/KVzpYm
