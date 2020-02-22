@@ -10,7 +10,6 @@ export default () => (
 					<p>
 						Soy un estudiante de la carrera Analista de Sistemas de Computación del
 						interior de Córdoba 🇦🇷.
-						<br />
 						Mirá mi{" "}
 						<a href="https://www.linkedin.com/in/marco-richetta/" className="link2">
 							LinkedIn
