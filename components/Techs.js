@@ -5,11 +5,6 @@ const Techs = () => {
 	return (
 		<>
 			<h1 className="text-xl md:text-2xl lg:text-3xl">Tecnologías que utilizo</h1>
-			<section className="text-md md:text-xl mb-2">
-				Mi <span className="highlight">objetivo</span> actualmente es el de trabajar
-				desarrollando aplicaciones web con <span className="highlight">React</span>. A pesar
-				de esto, me siento cómodo trabajando con las siguientes tecnologías:
-			</section>
 			<section className="flex flex-wrap text-justify mb-4">
 				{techs.map(tech => (
 					<div key={tech.title} className="w-1/2 md:w-1/3 px-8 my-2">

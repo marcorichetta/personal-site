@@ -44,7 +44,7 @@ export default [
 		tags: ["react", "graphql", "apollo-graphql"]
 	},
 	{
-		name: "Personal Site",
+		name: "Sitio Personal",
 		url: "#",
 		source: "https://github.com/marcorichetta/personal-site",
 		imgSource: "personal-site",

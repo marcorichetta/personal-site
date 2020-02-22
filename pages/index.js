@@ -12,17 +12,16 @@ export default () => {
 						alt="Person with a computer"
 						src="images/undraw_coding.svg"
 					></img>
-					<div className="text-xl md:text-2xl lg:text-3xl font-bold">
+					<span className="hidden lg:block sm:mt-2 lg:text-3xl font-bold">
 						Marco Richetta
-						<br />
-						<i className="text-xl md:text-2xl">Desarrollador de aplicaciones web</i> 💻
-						<br />
-					</div>
-
+					</span>
+					<i className="text-xl mt-2 md:text-2xl lg:mt-0">
+						Desarrollador de aplicaciones web
+					</i>
 					<Social />
 				</section>
 
-				<section className="text-center mx-auto max-w-lg text-md md:text-xl mb-8">
+				<section className="text-center font-bold mx-auto max-w-lg text-md md:text-xl mb-8">
 					La idea de este sitio es centralizar la información sobre mí y sobre los
 					proyectos en los que trabaje.
 					<br />
