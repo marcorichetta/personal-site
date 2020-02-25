@@ -15,10 +15,11 @@ export default () => (
 		</section>
 
 		<div className="grid sm:grid-cols-2 gap-4 grid-centering">
-			{data.map(({ name, url, source, imgSource, description, tags }) => (
+			{data.map(({ name, date, url, source, imgSource, description, tags }) => (
 				<Card
 					key={name}
 					name={name}
+					date={date}
 					url={url}
 					source={source}
 					imgSource={imgSource}

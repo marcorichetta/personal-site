@@ -1,18 +1,16 @@
-const Card = ({ name, url, source, imgSource, description, tags }) => {
+const Card = ({ name, date, url, source, imgSource, description, tags }) => {
 	const buttons = [
 		{ icon: "link", text: "Abrir", link: url },
-		{ icon: "github", text: "Source", link: source }
+		{ icon: "github", text: "Fuente", link: source }
 	];
 
 	return (
 		<div className="col-span-1 sm:max-w-sm max-w-xs rounded-md overflow-hidden shadow-xl bg-gray-300">
-			<img
-				className="w-auto h-auto"
-				src={`images/projects/${imgSource}.jpg`}
-			/>
+			<img className="w-auto h-auto" src={`images/projects/${imgSource}.jpg`} />
 			<div className="px-6 py-4">
-				<div className="text-gray-700 font-bold text-xl mb-2">{name}</div>
-				<p className="text-gray-700 text-base">{description}</p>
+				<div className="text-gray-700 font-bold text-xl">{name}</div>
+				<p className="text-gray-600">{date}</p>
+				<p className="text-gray-700 text-base mt-2">{description}</p>
 			</div>
 			<div className="px-6 py-2">
 				{buttons.map(({ icon, text, link }) => (

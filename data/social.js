@@ -1,10 +1,5 @@
 export default [
     {
-        "name": "Twitter",
-        "icon": "twitter",
-        "url": "https://twitter.com/MarcoRichetta"
-    },
-    {
         "name": "Github",
         "icon": "github",
         "url": "https://github.com/marcorichetta"
