@@ -18,7 +18,7 @@
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Lato";
 	font-style: normal;
 	font-weight: 400;
@@ -29,7 +29,7 @@
 		url("/fonts/lato-bold.woff") format("woff"),
 		url("/fonts/lato-black.woff2") format("woff2"),
 		url("/fonts/lato-black.woff") format("woff");
-}
+} */
 
 /* Customize highlighted text */
 :not(img)::selection {

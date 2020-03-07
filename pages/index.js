@@ -12,7 +12,7 @@ export default () => {
 						alt="Person with a computer"
 						src="images/undraw_coding.svg"
 					></img>
-					<span className="hidden lg:block sm:mt-2 lg:text-3xl font-bold">
+					<span className="hidden lg:block sm:mt-2 lg:text-3xl font-bold tracking-tighter">
 						Marco Richetta
 					</span>
 					<i className="text-xl mt-2 md:text-2xl lg:mt-0">
@@ -22,8 +22,8 @@ export default () => {
 				</section>
 
 				<section className="text-center font-bold mx-auto max-w-lg text-md md:text-xl mb-8">
-					La idea de este sitio es centralizar la información sobre mí y sobre los
-					proyectos en los que trabaje.
+					La idea de este sitio es centralizar información sobre mí y sobre los proyectos
+					en los que trabaje.
 					<br />
 				</section>
 

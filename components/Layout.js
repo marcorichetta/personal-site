@@ -37,6 +37,12 @@ export default ({ children, title = "Marco Richetta - Programador Web" }) => {
 					content="https://marcorichetta.now.sh/images/undraw_programming.png"
 				/>
 
+				{/* Inter font */}
+				<link
+					href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+					rel="stylesheet"
+				/>
+
 				{/* Favicons */}
 				<link
 					rel="apple-touch-icon"

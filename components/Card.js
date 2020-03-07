@@ -1,4 +1,11 @@
-const Card = ({ name, date, url, source, imgSource, description, tags }) => {
+import { useState } from "react";
+
+const Card = props => {
+	// Destructuring de props
+	const { name, course, date, url, source, imgSource, credentials, description, tags } = props;
+
+	const [showCredentials, setshowCredentials] = useState("hidden");
+
 	const buttons = [
 		{ icon: "link", text: "Abrir", link: url },
 		{ icon: "github", text: "Fuente", link: source }
@@ -8,8 +15,33 @@ const Card = ({ name, date, url, source, imgSource, description, tags }) => {
 		<div className="col-span-1 sm:max-w-sm max-w-xs rounded-md overflow-hidden shadow-xl bg-gray-300">
 			<img className="w-auto h-auto" src={`images/projects/${imgSource}.jpg`} />
 			<div className="px-6 py-4">
-				<div className="text-gray-700 font-bold text-xl">{name}</div>
-				<p className="text-gray-600">{date}</p>
+				<div className="flex justify-between w-full">
+					<div className="text-gray-700 font-bold text-xl">{name}</div>
+					<div className="flex items-center text-sm text-gray-500">
+						<svg
+							className="flex-shrink-0 mr-1 h-5 w-5 text-gray-600"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+						>
+							<path
+								fillRule="evenodd"
+								d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+								clipRule="evenodd"
+							/>
+						</svg>
+						<p className="text-gray-600">{date}</p>
+					</div>
+				</div>
+				{course ? (
+					<div className="text-gray-600 pt-2">
+						Curso:{" "}
+						<a className="text-blue-500" href={course.url}>
+							{course.name}
+						</a>
+					</div>
+				) : (
+					""
+				)}
 				<p className="text-gray-700 text-base mt-2">{description}</p>
 			</div>
 			<div className="px-6 py-2">
@@ -24,6 +56,25 @@ const Card = ({ name, date, url, source, imgSource, description, tags }) => {
 						</button>
 					</a>
 				))}
+			</div>
+			<div className="px-6 py-2">
+				{credentials ? (
+					<>
+						<button
+							className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
+							onClick={() => setshowCredentials("block")}
+						>
+							Credenciales
+						</button>
+						<span className={`${showCredentials} text-gray-600`}>
+							<b>User:</b> {credentials.user}
+							<br />
+							<b>Pass:</b> {credentials.pass}
+						</span>
+					</>
+				) : (
+					""
+				)}
 			</div>
 			<div className="px-6 py-4">
 				{tags.map(t => (

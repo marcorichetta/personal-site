@@ -15,7 +15,7 @@ const Navbar = () => {
 			<div className="flex items-center justify-between px-4 py-3">
 				<div>
 					<Link href="/">
-						<a className="text-xl sm:text-2xl font-bold tracking-tighter gradient-name">
+						<a className="text-xl sm:text-2xl font-bold tracking-tighter">
 							Marco Richetta
 						</a>
 					</Link>
