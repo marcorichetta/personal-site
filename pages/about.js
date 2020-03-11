@@ -12,7 +12,12 @@ export default () => (
 						interior de Córdoba -> 🇦🇷
 						<br />
 						Mirá mi{" "}
-						<a href="https://www.linkedin.com/in/marco-richetta/" className="link2">
+						<a
+							href="https://www.linkedin.com/in/marco-richetta/"
+							className="link2"
+							target="_blank"
+							rel="noopener"
+						>
 							LinkedIn
 						</a>{" "}
 						para más detalles.

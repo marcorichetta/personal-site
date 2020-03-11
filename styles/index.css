@@ -3,8 +3,11 @@
 @tailwind components;
 /* purgecss end ignore */
 
+/* Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
 #NextApp {
-	font-family: "Inter";
+	font-family: "Inter", 'sans-serif';
 	background: #0575e6; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to bottom,
@@ -18,20 +21,6 @@
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-
-/* @font-face {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 400;
-	font-display: swap;
-	src: url("/fonts/lato-regular.woff2") format("woff2"),
-		url("/fonts/lato-regular.woff") format("woff"),
-		url("/fonts/lato-bold.woff2") format("woff2"),
-		url("/fonts/lato-bold.woff") format("woff"),
-		url("/fonts/lato-black.woff2") format("woff2"),
-		url("/fonts/lato-black.woff") format("woff");
-} */
 
 /* Customize highlighted text */
 :not(img)::selection {
@@ -68,7 +57,7 @@
 	position: relative;
 	text-decoration: none;
 	color: #fff;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 .hover-1:after {

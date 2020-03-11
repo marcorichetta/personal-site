@@ -35,7 +35,12 @@ const Card = props => {
 				{course ? (
 					<div className="text-gray-600 pt-2">
 						Curso:{" "}
-						<a className="text-blue-500" href={course.url}>
+						<a
+							className="text-blue-500"
+							href={course.url}
+							target="_blank"
+							rel="noopener"
+						>
 							{course.name}
 						</a>
 					</div>
@@ -46,7 +51,7 @@ const Card = props => {
 			</div>
 			<div className="px-6 py-2">
 				{buttons.map(({ icon, text, link }) => (
-					<a key={icon} href={link}>
+					<a key={icon} href={link} target="_blank" rel="noopener">
 						<button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold mr-2 py-2 px-4 border border-gray-400 rounded-md shadow-md">
 							<img
 								className="inline pr-2 h-6"

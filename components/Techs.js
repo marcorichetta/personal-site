@@ -17,7 +17,12 @@ const Techs = () => {
 										alt={`${t.name} icon`}
 										src={`icons/skills/${t.icon}`}
 									></img>
-									<a className="text-blue-300 link hover-1" href={t.url}>
+									<a
+										className="text-blue-300 link hover-1"
+										href={t.url}
+										target="_blank"
+										rel="noopener"
+									>
 										{t.name}
 									</a>
 								</li>
