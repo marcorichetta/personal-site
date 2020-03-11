@@ -28,7 +28,7 @@ const Footer = () => (
 			Zeit Now
 		</a>
 		<a href="https://github.com/marcorichetta/personal-site" target="_blank" rel="noopener">
-			<img className="inline px-2" src={`icons/social/github2.svg`}></img>
+			<img alt="Github Logo" className="inline px-2" src={`icons/social/github2.svg`}></img>
 		</a>
 		<br />
 		Marco Richetta - {new Date().getFullYear()}

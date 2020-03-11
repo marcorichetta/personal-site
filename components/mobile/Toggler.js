@@ -1,6 +1,6 @@
 const Toggler = ({ isMenuOpen, setisMenuOpen }) => {
 	return (
-		<button onClick={() => setisMenuOpen(!isMenuOpen)}>
+		<button onClick={() => setisMenuOpen(!isMenuOpen)} aria-label="Toggle">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="26"

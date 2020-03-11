@@ -4,7 +4,7 @@
 /* purgecss end ignore */
 
 #NextApp {
-	font-family: "Lato";
+	font-family: "Inter";
 	background: #0575e6; /* fallback for old browsers */
 	background: -webkit-linear-gradient(
 		to bottom,
@@ -17,6 +17,8 @@
 		#021b79
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 
 /* @font-face {
 	font-family: "Lato";
