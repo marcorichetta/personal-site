@@ -6,11 +6,11 @@ export default () => {
 	return (
 		<>
 			<Layout title="Inicio | Marco Richetta">
-				<section className="flex flex-col text-center mb-4 justify-center">
+				<section className="flex flex-col text-center mb-4 items-center">
 					<img
-						className="h-32"
-						alt="Person with a computer"
-						src="images/undraw_coding.svg"
+						className="h-24 w-24 md:h-32 md:w-32 rounded-full"
+						alt="Avatar de Marco Richetta"
+						src="images/cv.jpg"
 					></img>
 					<span className="hidden lg:block sm:mt-2 lg:text-3xl font-bold tracking-tighter">
 						Marco Richetta
