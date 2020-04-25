@@ -2,7 +2,12 @@ import Head from "next/head";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
-export default ({ children, title = "Marco Richetta - Programador Web" }) => {
+export interface ILayoutProps {
+	children: React.ReactNode;
+	title: string;
+}
+
+export default ({ children, title = "Marco Richetta - Programador Web" }: ILayoutProps) => {
 	return (
 		<>
 			<Head>

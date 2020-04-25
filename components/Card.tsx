@@ -1,6 +1,24 @@
 import { useState } from "react";
 
-const Card = props => {
+export interface ICardProps {
+	name: string;
+	course: {
+		name: string;
+		url: string;
+	};
+	date: string;
+	url: string;
+	source: string;
+	imgSource: string;
+	credentials: {
+		user: string;
+		pass: string;
+	};
+	description: string;
+	tags: Array<string>;
+}
+
+const Card = (props: ICardProps) => {
 	// Destructuring de props
 	const { name, course, date, url, source, imgSource, credentials, description, tags } = props;
 
@@ -8,7 +26,7 @@ const Card = props => {
 
 	const buttons = [
 		{ icon: "link", text: "Abrir", link: url },
-		{ icon: "github", text: "Fuente", link: source }
+		{ icon: "github", text: "Fuente", link: source },
 	];
 
 	return (
@@ -83,7 +101,7 @@ const Card = props => {
 				)}
 			</div>
 			<div className="px-6 py-4">
-				{tags.map(t => (
+				{tags.map((t: string) => (
 					<span
 						key={t}
 						className="inline-block bg-blue-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"

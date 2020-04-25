@@ -1,4 +1,11 @@
-const Toggler = ({ isMenuOpen, setisMenuOpen }) => {
+import { Dispatch, SetStateAction } from "react";
+
+export interface IToggleProps {
+	isMenuOpen: boolean;
+	setisMenuOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Toggler = ({ isMenuOpen, setisMenuOpen }: IToggleProps) => {
 	return (
 		<button onClick={() => setisMenuOpen(!isMenuOpen)} aria-label="Toggle">
 			<svg
