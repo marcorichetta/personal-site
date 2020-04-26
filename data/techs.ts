@@ -1,9 +1,3 @@
-export interface ITech {
-	name: string;
-	icon: string;
-	url: string;
-}
-
 export default [
 	{
 		title: "Frontend",

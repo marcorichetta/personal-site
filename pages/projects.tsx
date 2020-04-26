@@ -1,6 +1,7 @@
 import Layout from "../components/Layout";
 import Card from "../components/Card";
-import data from "../data/repos";
+import repos from "../data/repos";
+import { IRepo } from "../interfaces";
 
 export default () => (
 	<Layout title="Proyectos | Marco Richetta">
@@ -15,32 +16,9 @@ export default () => (
 		</section>
 
 		<div className="grid sm:grid-cols-2 gap-4 grid-centering">
-			{data.map(
-				({
-					name,
-					course,
-					date,
-					url,
-					source,
-					imgSource,
-					credentials,
-					description,
-					tags
-				}) => (
-					<Card
-						key={name}
-						name={name}
-						course={course}
-						date={date}
-						url={url}
-						source={source}
-						imgSource={imgSource}
-						credentials={credentials}
-						description={description}
-						tags={tags}
-					/>
-				)
-			)}
+			{repos.map((repo: IRepo) => (
+				<Card {...repo} />
+			))}
 		</div>
 	</Layout>
 );

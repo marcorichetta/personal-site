@@ -3,7 +3,7 @@ export default [
 		name: "Book Reviews",
 		course: {
 			name: "CS50",
-			url: "https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/"
+			url: "https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/",
 		},
 		date: "Dic 2018",
 		url: "https://book-reviews-cs50-project1.herokuapp.com",
@@ -11,19 +11,19 @@ export default [
 		imgSource: "books50",
 		credentials: {
 			user: "prueba",
-			pass: "prueba"
+			pass: "prueba",
 		},
 		description:
 			"La aplicación permite registrarse como usuario, buscar un libro entre los 5000 cargados en la \
             base de datos y guardar una reseña sobre el mismo. \
 			Se conecta con la API de Goodreads para traer información sobre el libro seleccionado.",
-		tags: ["python", "flask", "heroku"]
+		tags: ["python", "flask", "heroku"],
 	},
 	{
 		name: "React-Redux Blog",
 		course: {
 			name: "Fullstack Open",
-			url: "https://fullstackopen.com/en/"
+			url: "https://fullstackopen.com/en/",
 		},
 		date: "Sep - Dic 2019",
 		url: "https://part4-blog-backend.herokuapp.com/",
@@ -31,13 +31,13 @@ export default [
 		imgSource: "part7-blog",
 		credentials: {
 			user: "rich",
-			pass: "rich"
+			pass: "rich",
 		},
 		description:
 			"Esta app permite crear, comentar y eliminar posts simples como también dar likes. \
             El frontend está hecho con Semantic UI; se maneja el estado con Redux y el routing con React-Router \
             y también contiene algunos tests E2E con Cypress ",
-		tags: ["react", "redux", "semantic-ui", "cypress"]
+		tags: ["react", "redux", "semantic-ui", "cypress"],
 	},
 	{
 		name: "FinanzUP",
@@ -49,13 +49,13 @@ export default [
 			"Calculadora financiera para plazos fijos y préstamos. Permite guardar clientes y \
 			relacionarlos con los préstamos o plazos fijos solicitados. \
 			Uno de mis primeros proyectos hechos con HTML, CSS y Javascript puro.",
-		tags: ["bootstrap", "flask", "javascript", "python"]
+		tags: ["bootstrap", "flask", "javascript", "python"],
 	},
 	{
 		name: "React-GraphQL Library",
 		course: {
 			name: "Fullstack Open",
-			url: "https://fullstackopen.com/en/"
+			url: "https://fullstackopen.com/en/",
 		},
 		date: "Ene 2020",
 		url: "https://part8-frontend.now.sh/",
@@ -63,13 +63,13 @@ export default [
 		imgSource: "react-graphql",
 		credentials: {
 			user: "Marco",
-			pass: "secret"
+			pass: "secret",
 		},
 		description:
 			"Aplicación que simula una biblioteca muy simple. \
 			Permite autenticarse y cargar libros, categorizarlos y filtrarlos por género. \
 			La idea era interiorizarme con los conceptos de GraphQL",
-		tags: ["react", "graphql", "apollo-graphql"]
+		tags: ["react", "graphql", "apollo-graphql"],
 	},
 	{
 		name: "Sitio Personal",
@@ -78,9 +78,8 @@ export default [
 		source: "https://github.com/marcorichetta/personal-site",
 		imgSource: "personal-site",
 		description:
-			"El código fuente de este sitio. Decidí probar Nextjs como framework para proyectos con React. \
-			También decidí probar TailwindCSS, viendo las buenas impresiones de varios usuarios, y debo decir \
-			que no me defraudó.",
-		tags: ["react", "nextjs", "tailwindcss"]
-	}
+			"El código fuente de este sitio. Decidí probar Nextjs como framework para \
+			proyectos con React junto a TailwindCSS.",
+		tags: ["react", "nextjs", "tailwindcss"],
+	},
 ];

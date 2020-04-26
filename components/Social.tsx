@@ -1,9 +1,10 @@
-import links from "../data/social.js";
+import links from "../data/social";
+import { ISocial } from "../interfaces";
 
 const Social = () => {
 	return (
 		<div className="py-4">
-			{links.map(({ name, icon, url }) => (
+			{links.map(({ name, icon, url }: ISocial) => (
 				<a key={name} href={url} target="_blank" rel="noopener">
 					<img
 						title={name}

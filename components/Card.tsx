@@ -1,24 +1,7 @@
 import { useState } from "react";
+import { IRepo } from "../interfaces";
 
-export interface ICardProps {
-	name: string;
-	course: {
-		name: string;
-		url: string;
-	};
-	date: string;
-	url: string;
-	source: string;
-	imgSource: string;
-	credentials: {
-		user: string;
-		pass: string;
-	};
-	description: string;
-	tags: Array<string>;
-}
-
-const Card = (props: ICardProps) => {
+const Card = (props: IRepo) => {
 	// Destructuring de props
 	const { name, course, date, url, source, imgSource, credentials, description, tags } = props;
 

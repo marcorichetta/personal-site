@@ -1,9 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
-
-export interface IToggleProps {
-	isMenuOpen: boolean;
-	setisMenuOpen: Dispatch<SetStateAction<boolean>>;
-}
+import { IToggleProps } from "../../interfaces";
 
 const Toggler = ({ isMenuOpen, setisMenuOpen }: IToggleProps) => {
 	return (
