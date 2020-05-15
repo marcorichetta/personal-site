@@ -21,11 +21,11 @@ const Footer = () => (
 		y{" "}
 		<a
 			className="text-blue-300 link hover-1"
-			href="https://zeit.co/now"
+			href="https://vercel.com/home"
 			target="_blank"
 			rel="noopener"
 		>
-			Zeit Now
+			Vercel
 		</a>
 		<a href="https://github.com/marcorichetta/personal-site" target="_blank" rel="noopener">
 			<img alt="Github Logo" className="inline px-2" src={`icons/social/github2.svg`}></img>

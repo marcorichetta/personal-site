@@ -61,6 +61,7 @@ export default ({ children, title = "Marco Richetta - Programador Web" }: ILayou
 					href="icons/favicon/favicon-16x16.png"
 				/>
 				<link rel="manifest" href="icons/favicon/site.webmanifest" />
+				<meta name="google-site-verification" content="0tR5wiUIN_xrDarPhRVBb-5Z7aI6nFMpWjxy_8zuR-E" />
 			</Head>
 			<div id="NextApp" className="flex flex-col justify-between min-h-screen text-gray-200">
 				<Navbar />
