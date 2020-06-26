@@ -15,7 +15,12 @@ export default [
 		url: "mailto:marcorichetta@gmail.com",
 	},
 	{
-		name: "Curriculum",
+		name: "Telegram",
+		icon: "telegram",
+		url: "https://t.me/marcorich",
+	},
+	{
+		name: "Mira mi CV",
 		icon: "pdf",
 		url: "https://drive.google.com/file/d/1cPoHR-j3xzsI5dTzc7z31LCVaSXG0TlR/view?usp=sharing",
 	},

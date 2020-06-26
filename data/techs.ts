@@ -8,19 +8,14 @@ export default [
 				url: "https://reactjs.org/",
 			},
 			{
-				name: "Javascript",
-				icon: "javascript.svg",
-				url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-			},
-			{
 				name: "Typescript",
 				icon: "typescript.svg",
 				url: "https://www.typescriptlang.org/",
 			},
 			{
-				name: "Redux",
-				icon: "redux.svg",
-				url: "https://redux.js.org/",
+				name: "Apollo",
+				icon: "apollostack.svg",
+				url: "https://www.apollographql.com/",
 			},
 			{
 				name: "GraphQL",
@@ -32,11 +27,10 @@ export default [
 				icon: "tailwindcss1.svg",
 				url: "https://tailwindcss.com/",
 			},
-
 			{
-				name: "Apollo",
-				icon: "apollostack.svg",
-				url: "https://www.apollographql.com/",
+				name: "Bootstrap",
+				icon: "bootstrap.svg",
+				url: "http://getbootstrap.com/",
 			},
 		],
 	},
@@ -57,11 +51,6 @@ export default [
 				name: "PostgreSQL",
 				icon: "postgresql.svg",
 				url: "https://www.postgresql.org/",
-			},
-			{
-				name: "Flask",
-				icon: "flask.svg",
-				url: "https://flask.palletsprojects.com/en/1.1.x/",
 			},
 		],
 	},
@@ -87,11 +76,6 @@ export default [
 				name: "Socket.IO",
 				icon: "socket.io.svg",
 				url: "https://socket.io/",
-			},
-			{
-				name: "Bootstrap",
-				icon: "bootstrap.svg",
-				url: "http://getbootstrap.com/",
 			},
 		],
 	},
