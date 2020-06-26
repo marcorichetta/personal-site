@@ -13,7 +13,7 @@ const Card = (props: IRepo) => {
 	];
 
 	return (
-		<div className="col-span-1 sm:max-w-sm max-w-xs rounded-md overflow-hidden shadow-xl bg-gray-300">
+		<div className="col-span-1 sm:max-w-md max-w-xs rounded-md overflow-hidden shadow-xl bg-gray-300">
 			<img className="w-auto h-auto" src={`images/projects/${imgSource}.jpg`} />
 			<div className="px-6 py-4">
 				<div className="flex justify-between w-full">

@@ -9,7 +9,7 @@ export default () => (
 				<div className="md:w-1/2 px-8 mb-4">
 					<p>
 						Soy un estudiante de la carrera Analista de Sistemas de Computación del
-						interior de Córdoba -> 🇦🇷
+						interior de Córdoba &rarr; 🇦🇷
 						<br />
 						Mirá mi{" "}
 						<a

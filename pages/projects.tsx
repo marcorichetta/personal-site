@@ -15,9 +15,9 @@ export default () => (
 			</p>
 		</section>
 
-		<div className="grid sm:grid-cols-2 gap-4 grid-centering">
+		<div className="grid sm:grid-cols-2 gap-10 grid-centering">
 			{repos.map((repo: IRepo) => (
-				<Card {...repo} />
+				<Card key={repo.name} {...repo} />
 			))}
 		</div>
 	</Layout>

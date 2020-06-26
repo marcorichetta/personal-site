@@ -69,7 +69,7 @@ export default [
 			"Aplicación que simula una biblioteca muy simple. \
 			Permite autenticarse y cargar libros, categorizarlos y filtrarlos por género. \
 			La idea era interiorizarme con los conceptos de GraphQL",
-		tags: ["react", "graphql", "apollo-graphql"],
+		tags: ["react", "apollo-graphql"],
 	},
 	{
 		name: "Sitio Personal",
