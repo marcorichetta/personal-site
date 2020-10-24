@@ -7,7 +7,7 @@ export interface ILayoutProps {
 	title: string;
 }
 
-export default ({ children, title = "Marco Richetta - Programador Web" }: ILayoutProps) => {
+const Layout = ({ children, title = "Marco Richetta - Programador Web" }: ILayoutProps) => {
 	return (
 		<>
 			<Head>
@@ -74,3 +74,5 @@ export default ({ children, title = "Marco Richetta - Programador Web" }: ILayou
 		</>
 	);
 };
+
+export default Layout;

@@ -1,10 +1,10 @@
 import Layout from "../components/Layout";
 import Link from "next/link";
 
-export default () => (
+const About = () => (
 	<Layout title="Sobre mi | Marco Richetta">
 		<div className="flex flex-wrap justify-around">
-			<h1 className="text-2xl md:text-3xl font-bold italic mb-2">Sobre mí</h1>
+			<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">Sobre mí</h1>
 			<section className="flex flex-wrap text-justify mb-4 px-2 text-base lg:text-lg">
 				<div className="md:w-1/2 px-8 mb-4">
 					<p>
@@ -53,3 +53,5 @@ export default () => (
 		</div>
 	</Layout>
 );
+
+export default About;

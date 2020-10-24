@@ -1,5 +1,5 @@
 const Footer = () => (
-	<footer className="p-4 text-center text-gray-400 text-sm">
+	<footer className="p-4 text-center text-gray-400 text-md">
 		Hecho con{" "}
 		<a
 			className="text-blue-300 link hover-1"
@@ -8,8 +8,8 @@ const Footer = () => (
 			rel="noopener"
 		>
 			Next.js
-		</a>
-		,{" "}
+		</a>{" "}
+		y{" "}
 		<a
 			className="text-blue-300 link hover-1"
 			href="https://tailwindcss.com"
@@ -18,10 +18,10 @@ const Footer = () => (
 		>
 			Tailwind CSS
 		</a>{" "}
-		y{" "}
+		• Hosteado en{" "}
 		<a
 			className="text-blue-300 link hover-1"
-			href="https://vercel.com/home"
+			href="https://vercel.com/"
 			target="_blank"
 			rel="noopener"
 		>
@@ -31,7 +31,7 @@ const Footer = () => (
 			<img alt="Github Logo" className="inline px-2" src={`icons/social/github2.svg`}></img>
 		</a>
 		<br />
-		Marco Richetta - {new Date().getFullYear()}
+		<b>Marco Richetta</b> • {new Date().getFullYear()}
 	</footer>
 );
 

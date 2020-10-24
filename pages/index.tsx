@@ -2,21 +2,25 @@ import Layout from "../components/Layout";
 import Techs from "../components/Techs";
 import Social from "../components/Social";
 
-export default () => {
+const Index = () => {
 	return (
 		<>
 			<Layout title="Inicio | Marco Richetta">
 				<section className="flex flex-col text-center mb-4 items-center">
 					<img
+						id="avatar"
 						className="h-24 w-24 md:h-32 md:w-32 rounded-full"
 						alt="Avatar de Marco Richetta"
-						src="images/cv.jpg"
+						src="images/cv-lg.jpg"
+						srcSet="images/cv-lg.jpg 1315w, images/cv-sm.jpg 868w"
+						sizes="176px"
 					></img>
-					<span className="hidden lg:block sm:mt-2 lg:text-3xl font-bold tracking-tighter">
-						Marco Richetta
+					<span className="text-2xl mt-2 lg:block lg:text-4xl font-bold tracking-tight">
+						¡Hola! 👋 <br />
+						Me llamo Marco
 					</span>
 					<i className="text-xl mt-2 md:text-2xl lg:mt-0">
-						Desarrollador de aplicaciones web
+						y soy desarrollador de software
 					</i>
 					<Social />
 				</section>
@@ -32,3 +36,5 @@ export default () => {
 		</>
 	);
 };
+
+export default Index;

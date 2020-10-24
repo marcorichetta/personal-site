@@ -21,6 +21,9 @@
 	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#avatar {
+	filter: drop-shadow(0 0 1.5rem #292929);
+}
 
 /* Customize highlighted text */
 :not(img)::selection {
@@ -34,12 +37,7 @@
 }
 
 .invert-color:hover {
-	filter: invert(90%);
-}
-
-/* Fallback hasta que Tailwind permita modificar estas props */
-.grid-centering {
-	justify-items: center;
+	filter: invert(23%) sepia(100%) saturate(2000%);
 }
 
 .highlight {

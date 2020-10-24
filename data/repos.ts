@@ -18,6 +18,17 @@ export default [
             base de datos y guardar una reseña sobre el mismo. \
 			Se conecta con la API de Goodreads para traer información sobre el libro seleccionado.",
 		tags: ["python", "flask", "heroku"],
+    },
+    {
+		name: "Sitio Personal",
+		date: "Feb 2020",
+		url: "#",
+		source: "https://github.com/marcorichetta/personal-site",
+		imgSource: "personal-site",
+		description:
+			"El código fuente de este sitio. Decidí probar Nextjs como framework para \
+			proyectos con React junto a TailwindCSS.",
+		tags: ["react", "nextjs", "tailwindcss"],
 	},
 	{
 		name: "React-Redux Blog",
@@ -70,16 +81,5 @@ export default [
 			Permite autenticarse y cargar libros, categorizarlos y filtrarlos por género. \
 			La idea era interiorizarme con los conceptos de GraphQL",
 		tags: ["react", "apollo-graphql"],
-	},
-	{
-		name: "Sitio Personal",
-		date: "Feb 2020",
-		url: "#",
-		source: "https://github.com/marcorichetta/personal-site",
-		imgSource: "personal-site",
-		description:
-			"El código fuente de este sitio. Decidí probar Nextjs como framework para \
-			proyectos con React junto a TailwindCSS.",
-		tags: ["react", "nextjs", "tailwindcss"],
 	},
 ];
