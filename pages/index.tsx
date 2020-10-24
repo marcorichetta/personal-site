@@ -10,10 +10,8 @@ const Index = () => {
 					<img
 						id="avatar"
 						className="h-24 w-24 md:h-32 md:w-32 rounded-full"
-						alt="Avatar de Marco Richetta"
-						src="images/cv-lg.jpg"
-						srcSet="images/cv-lg.jpg 1315w, images/cv-sm.jpg 868w"
-						sizes="176px"
+						alt="Foto de Marco Richetta"
+						src="images/cv200.jpg"
 					></img>
 					<span className="text-2xl mt-2 lg:block lg:text-4xl font-bold tracking-tight">
 						¡Hola! 👋 <br />

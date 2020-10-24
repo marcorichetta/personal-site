@@ -65,6 +65,7 @@ const Layout = ({ children, title = "Marco Richetta - Programador Web" }: ILayou
 					name="google-site-verification"
 					content="0tR5wiUIN_xrDarPhRVBb-5Z7aI6nFMpWjxy_8zuR-E"
 				/>
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
 			</Head>
 			<div id="NextApp" className="flex flex-col justify-between min-h-screen text-gray-200">
 				<Navbar />

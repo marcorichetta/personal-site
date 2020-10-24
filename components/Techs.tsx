@@ -9,7 +9,7 @@ const Techs = () => {
 			<section className="flex flex-wrap text-justify mb-4">
 				{techs.map((stack) => (
 					<div key={stack.title} className="w-1/2 md:w-1/3 px-8 my-2">
-						<h3 className="text-lg md:text-xl lg:text-2xl mb-2">{stack.title}</h3>
+						<h1 className="text-lg md:text-xl lg:text-2xl mb-2">{stack.title}</h1>
 						<ul className="flex flex-col">
 							{stack.data.map(({ name, icon, url }: ITech) => (
 								<li className="flex items-center mb-2" key={name}>
