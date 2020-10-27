@@ -31,7 +31,7 @@ const Navbar = () => {
 			{/* Dinamically hide the nav based on the value of isMobile */}
 			<nav
 				className={`${isMenuOpen ? "block" : "hidden"}
-				sm:flex sm:block text-sm md:mt-0 md:text-base`}
+				sm:block text-sm md:mt-0 md:text-base`}
 			>
 				{routes.map(({ to, title }) => (
 					<Link href={to} key={title}>

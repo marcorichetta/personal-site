@@ -16,14 +16,20 @@ const Layout = ({ children, title = "Marco Richetta - Programador Web" }: ILayou
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
 				{/* Description meta tags */}
-				<meta name="title" content="Marco Richetta - Sitio Personal" />
-				<meta name="description" content="Programador web de Córdoba, Argentina" />
+				<meta name="title" content="Marco Richetta - Web Developer" />
+				<meta
+					name="description"
+					content="¡Hola! Soy Marco, desarrollador de software de Córdoba, Argentina."
+				/>
 
 				{/* Open Graph / Facebook */}
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://marcorichetta.now.sh/" />
-				<meta property="og:title" content="Marco Richetta - Sitio Personal" />
-				<meta property="og:description" content="Programador web de Córdoba, Argentina" />
+				<meta property="og:title" content="Marco Richetta - Web Developer" />
+				<meta
+					property="og:description"
+					content="¡Hola! Soy Marco, desarrollador de software de Córdoba, Argentina."
+				/>
 				<meta
 					property="og:image"
 					content="https://marcorichetta.now.sh/images/undraw_programming.png"
@@ -32,10 +38,10 @@ const Layout = ({ children, title = "Marco Richetta - Programador Web" }: ILayou
 				{/* Twitter */}
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:url" content="https://marcorichetta.now.sh/" />
-				<meta property="twitter:title" content="Marco Richetta - Sitio Personal" />
+				<meta property="twitter:title" content="Marco Richetta - Web Developer" />
 				<meta
 					property="twitter:description"
-					content="Programador web de Córdoba, Argentina"
+					content="¡Hola! Soy Marco, desarrollador de software de Córdoba, Argentina."
 				/>
 				<meta
 					property="twitter:image"
