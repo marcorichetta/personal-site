@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Toggler from "./mobile/Toggler";
+import Image from "next/image";
 
 const Navbar = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false);
@@ -16,10 +17,7 @@ const Navbar = () => {
 			<div className="flex items-center justify-between m-5">
 				<div>
 					<Link href="/">
-						<img title="logo" className="w-20" src="images/logo.svg"></img>
-						{/* <a className="text-xl sm:text-2xl font-bold tracking-tighter">
-							Marco Richetta
-						</a> */}
+						<Image width={110} height={55} title="logo" src="/images/logo.svg" />
 					</Link>
 				</div>
 

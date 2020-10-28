@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 import { IRepo } from "../interfaces";
 
@@ -14,7 +15,7 @@ const Card = (props: IRepo) => {
 
 	return (
 		<div className="col-span-1 sm:max-w-md max-w-xs rounded-md overflow-hidden shadow-2xl bg-gray-300">
-			<img className="w-auto h-auto" src={`images/projects/${imgSource}.jpg`} />
+			<Image unsized className="w-auto h-auto" src={`/images/projects/${imgSource}.jpg`} />
 			<div className="px-6 py-4">
 				<div className="flex justify-between w-full">
 					<div className="text-gray-700 font-bold text-xl">{name}</div>

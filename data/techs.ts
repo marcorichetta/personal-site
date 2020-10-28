@@ -18,11 +18,6 @@ export default [
 				url: "https://www.apollographql.com/",
 			},
 			{
-				name: "GraphQL",
-				icon: "graphql.svg",
-				url: "https://graphql.org/",
-			},
-			{
 				name: "Tailwind CSS",
 				icon: "tailwindcss1.svg",
 				url: "https://tailwindcss.com/",
@@ -58,8 +53,8 @@ export default [
 		title: "Varios",
 		data: [
 			{
-				name: "Manjaro Linux",
-				icon: "manjaro.svg",
+				name: "Linux",
+				icon: "linux.svg",
 				url: "https://manjaro.org//",
 			},
 			{

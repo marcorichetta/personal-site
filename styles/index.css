@@ -31,12 +31,12 @@
 	color: #373737;
 }
 
-/* Invert icons color */
-.invert-color {
+/* Invert icons color to yellow */
+.invert-filter {
 	transition: all 0.3s ease;
 }
 
-.invert-color:hover {
+.invert-filter:hover {
 	filter: invert(23%) sepia(100%) saturate(2000%);
 }
 
