@@ -1,4 +1,3 @@
-import Image from "next/image";
 import links from "../data/social";
 import { ISocial } from "../interfaces";
 
@@ -7,7 +6,7 @@ const Social = () => {
 		<div className="flex py-4">
 			{links.map(({ name, icon, url }: ISocial) => (
 				<a className="mr-3" key={name} href={url} target="_blank" rel="noopener">
-					<Image
+					<img
 						src={`/icons/social/${icon}.svg`}
 						title={name}
 						width={55}

@@ -10,8 +10,7 @@ const Index = () => {
 				<section className="flex flex-col text-center mb-2 items-center">
 					<Image
 						id="avatar"
-						src="/images/cv.jpg"
-						alt="Foto de Marco Richetta"
+						src="cv.jpg"
 						className="h-24 w-24 md:h-32 md:w-32 rounded-full"
 						width={200}
 						height={205}

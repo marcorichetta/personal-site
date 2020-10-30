@@ -12,14 +12,15 @@ const Techs = () => {
 						<h1 className="text-lg md:text-xl lg:text-2xl mb-2">{stack.title}</h1>
 						<ul className="flex flex-col">
 							{stack.data.map(({ name, icon, url }: ITech) => (
-								<li className="flex items-center mb-2" key={name}>
+								<li className="flex items-center mb-2 sm:text-base" key={name}>
 									<img
-										className="inline h-8 px-2"
 										alt={`${name} icon`}
-										src={`icons/skills/${icon}`}
-									></img>
+										src={`/icons/skills/${icon}`}
+										width={50}
+										height={50}
+									/>
 									<a
-										className="text-blue-300 link mx-2 hover-1"
+										className="text-blue-300 link ml-3 hover-1"
 										href={url}
 										target="_blank"
 										rel="noopener"

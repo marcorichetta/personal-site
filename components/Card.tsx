@@ -15,7 +15,7 @@ const Card = (props: IRepo) => {
 
 	return (
 		<div className="col-span-1 sm:max-w-md max-w-xs rounded-md overflow-hidden shadow-2xl bg-gray-300">
-			<Image unsized className="w-auto h-auto" src={`/images/projects/${imgSource}.jpg`} />
+			<Image unsized className="w-auto h-auto" src={imgSource} />
 			<div className="px-6 py-4">
 				<div className="flex justify-between w-full">
 					<div className="text-gray-700 font-bold text-xl">{name}</div>
@@ -57,7 +57,7 @@ const Card = (props: IRepo) => {
 						<button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold mr-2 py-2 px-4 border border-gray-400 rounded-md shadow-md">
 							<img
 								className="inline pr-2 h-6"
-								src={`icons/social/${icon}-black.svg`}
+								src={`/icons/social/${icon}-black.svg`}
 							></img>
 							{text}
 						</button>

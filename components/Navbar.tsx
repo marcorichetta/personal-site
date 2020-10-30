@@ -17,7 +17,9 @@ const Navbar = () => {
 			<div className="flex items-center justify-between m-5">
 				<div>
 					<Link href="/">
-						<Image width={110} height={55} title="logo" src="/images/logo.svg" />
+						<>
+							<Image width={110} height={55} title="logo" src="logo.svg" />
+						</>
 					</Link>
 				</div>
 

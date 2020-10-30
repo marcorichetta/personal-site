@@ -18,7 +18,7 @@ export default [
 				url: "https://www.apollographql.com/",
 			},
 			{
-				name: "Tailwind CSS",
+				name: "Tailwind",
 				icon: "tailwindcss1.svg",
 				url: "https://tailwindcss.com/",
 			},

@@ -3,50 +3,75 @@ import Link from "next/link";
 
 const About = () => (
 	<Layout title="Sobre mi | Marco Richetta">
-		<div className="flex flex-wrap justify-around">
-			<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">Sobre mí</h1>
-			<section className="flex flex-wrap text-justify mb-4 px-2 text-base lg:text-lg">
-				<div className="md:w-1/2 px-8 mb-4">
-					<p>
-						Soy un estudiante de la carrera Analista de Sistemas de Computación del
-						interior de Córdoba &rarr; 🇦🇷
-						<br />
-						Mirá mi{" "}
-						<a
-							href="https://www.linkedin.com/in/marco-richetta/"
-							className="link2"
-							target="_blank"
-							rel="noopener"
-						>
-							LinkedIn
-						</a>{" "}
-						para más detalles.
+		<div className="max-w-screen-md mx-auto">
+			<section className="mb-4 px-4 text-base lg:text-lg">
+				<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">Sobre mí</h1>
+				<div>
+					<p className="mb-4">
+						Soy un programador del interior de Córdoba (🇦🇷) y también estudiante de la
+						carrera Analista de Sistemas de Computación.
 					</p>
-					<br />
-					<p>
+					<p className="mb-4">
 						Desarrollé algunas{" "}
 						<Link href="/projects">
 							<a className="link2">aplicaciones</a>
 						</Link>{" "}
-						REST con frameworks de Python como Flask y Django, con SQlite3 y PostgreSQL
-						como bases de datos.
+						con frameworks de Python como Flask y Django, con SQlite3 y PostgreSQL como
+						bases de datos. <br /> Para el frontend, utilicé templates HTML (Jinja),
+						Javascript con AJAX para añadir funcionalidad extra y WebSockets para
+						consultas en tiempo real.
 					</p>
-					<p>
-						Para el frontend, utilicé templates HTML (Jinja), Javascript con AJAX para
-						añadir funcionalidad extra y WebSockets para consultas en tiempo real.
+					<p className="mb-4">
+						Me gusta contribuir a proyectos que uso o que me parecen interesantes. Por
+						ejemplo:
+						<ul className="list-disc list-inside">
+							<li>
+								Traducción de la documentación de{" "}
+								<a
+									href="https://github.com/python/python-docs-es/commits?author=marcorichetta"
+									className="link2"
+									target="_blank"
+									rel="noopener"
+								>
+									Python
+								</a>{" "}
+								y{" "}
+								<a
+									href="https://github.com/reactjs/es.reactjs.org/issues/4"
+									className="link2"
+									target="_blank"
+									rel="noopener"
+								>
+									React
+								</a>{" "}
+								al español.
+							</li>
+							<li>
+								<a
+									href="https://forum.djangoproject.com/u/marcorichetta/summary"
+									className="link2"
+									target="_blank"
+									rel="noopener"
+								>
+									Foro oficial de Django.
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://github.com/django/django/pull/13534"
+									className="link2"
+									target="_blank"
+									rel="noopener"
+								>
+									Código de Django
+								</a>{" "}
+								(Por algo se empieza 😅).
+							</li>
+						</ul>
 					</p>
-				</div>
-				<div className="md:w-1/2 px-8">
-					<p>
-						Estoy profundizando mis conocimientos sobre ReactJS, una librería hecha por
-						Facebook para la creación de interfaces de usuario. React brinda ciertos
-						beneficios al momento de definir nuestra UI como componentes reutilizables y
-						nos permite manejar el estado de los mismos de una manera consistente.
-					</p>
-					<br />
-					<p>
-						También estoy aprendiendo Typescript para detectar errores a través de su
-						sistema de tipos y así poder desarrollar aplicaciones más seguras.
+					<p className="mb-4">
+						Actualmente utilizo Next.js para desarrollo frontend y Django Rest Framework
+						para el backend.
 					</p>
 				</div>
 			</section>

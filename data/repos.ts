@@ -8,7 +8,7 @@ export default [
 		date: "Dic 2018",
 		url: "https://book-reviews-cs50-project1.herokuapp.com",
 		source: "https://github.com/marcorichetta/cs50w-project1",
-		imgSource: "books50",
+		imgSource: "projects/books50.jpg",
 		credentials: {
 			user: "prueba",
 			pass: "prueba",
@@ -24,7 +24,7 @@ export default [
 		date: "Feb 2020",
 		url: "#",
 		source: "https://github.com/marcorichetta/personal-site",
-		imgSource: "personal-site",
+		imgSource: "projects/personal-site.jpg",
 		description:
 			"El código fuente de este sitio. Decidí probar Nextjs como framework para \
 			proyectos con React junto a TailwindCSS.",
@@ -39,7 +39,7 @@ export default [
 		date: "Sep - Dic 2019",
 		url: "https://part4-blog-backend.herokuapp.com/",
 		source: "https://github.com/marcorichetta/part7-blog-frontend-reloaded",
-		imgSource: "part7-blog",
+		imgSource: "projects/part7-blog.jpg",
 		credentials: {
 			user: "rich",
 			pass: "rich",
@@ -55,7 +55,7 @@ export default [
 		date: "Nov 2018",
 		url: "https://finanzup.herokuapp.com/",
 		source: "https://github.com/marcorichetta/FinanzUP",
-		imgSource: "finanzup",
+		imgSource: "projects/finanzup.jpg",
 		description:
 			"Calculadora financiera para plazos fijos y préstamos. Permite guardar clientes y \
 			relacionarlos con los préstamos o plazos fijos solicitados. \
@@ -71,7 +71,7 @@ export default [
 		date: "Ene 2020",
 		url: "https://part8-frontend.now.sh/",
 		source: "https://github.com/marcorichetta/part8-frontend",
-		imgSource: "react-graphql",
+		imgSource: "projects/react-graphql.jpg",
 		credentials: {
 			user: "Marco",
 			pass: "secret",
