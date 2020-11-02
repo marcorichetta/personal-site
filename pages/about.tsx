@@ -6,8 +6,8 @@ const About = () => (
 		<div className="max-w-screen-md mx-auto">
 			<section className="mb-4 px-4 text-base lg:text-lg">
 				<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">Sobre mí</h1>
-				<div>
-					<p className="mb-4">
+				<div className="leading-relaxed">
+					<p className="mb-4 ">
 						Soy un programador del interior de Córdoba (🇦🇷) y también estudiante de la
 						carrera Analista de Sistemas de Computación.
 					</p>
