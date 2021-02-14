@@ -20,9 +20,21 @@ export default [
 		tags: ["python", "flask", "heroku"],
     },
     {
+		name: "Enredarte",
+		date: "Dic 2020",
+		url: null,
+		source: "https://github.com/marcorichetta/enredarte",
+		imgSource: "v1613290710/projects/enredarte.jpg",
+		description:
+			"Proyecto realizado como parte de mi proyecto final para la carrera de Analista de Sistemas. \
+            Está lejos de ser productivo pero sin dudas me sirvió para poner en práctica conocimientos de \
+            Django, diseño de base de datos y Docker como ambiente de desarrollo.",
+		tags: ["python", "django", "pytest", "docker"],
+	},
+    {
 		name: "Sitio Personal",
 		date: "Feb 2020",
-		url: "#",
+		url: null,
 		source: "https://github.com/marcorichetta/personal-site",
 		imgSource: "projects/personal-site.jpg",
 		description:

@@ -24,7 +24,7 @@ export interface IRepo {
 		url: string;
 	};
 	date: string;
-	url: string;
+	url: string | null;
 	source: string;
 	imgSource: string;
 	credentials?: {

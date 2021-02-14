@@ -5,7 +5,7 @@ import { ITech } from "../interfaces";
 const Techs = () => {
 	return (
 		<>
-			<h1 className="text-xl md:text-2xl lg:text-3xl">Tecnologías que utilizo</h1>
+			<h1 className="text-xl md:text-2xl lg:text-3xl font-bold">Tecnologías que utilizo</h1>
 			<section className="flex flex-wrap text-justify mb-4">
 				{techs.map((stack) => (
 					<div key={stack.title} className="w-1/2 md:w-1/3 px-8 my-2">

@@ -15,7 +15,13 @@ const Card = (props: IRepo) => {
 
 	return (
 		<div className="col-span-1 sm:max-w-md max-w-xs rounded-md overflow-hidden shadow-2xl bg-gray-300">
-			<Image unsized className="w-auto h-auto" src={imgSource} />
+			<Image
+				layout="responsive"
+				width={200}
+				height={100}
+				className="w-auto h-auto"
+				src={imgSource}
+			/>
 			<div className="px-6 py-4">
 				<div className="flex justify-between w-full">
 					<div className="text-gray-700 font-bold text-xl">{name}</div>
@@ -52,17 +58,21 @@ const Card = (props: IRepo) => {
 				<p className="text-gray-700 text-base mt-2">{description}</p>
 			</div>
 			<div className="px-6 py-2">
-				{buttons.map(({ icon, text, link }) => (
-					<a key={icon} href={link} target="_blank" rel="noopener">
-						<button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold mr-2 py-2 px-4 border border-gray-400 rounded-md shadow-md">
-							<img
-								className="inline pr-2 h-6"
-								src={`/icons/social/${icon}-black.svg`}
-							></img>
-							{text}
-						</button>
-					</a>
-				))}
+				{buttons.map(({ icon, text, link }) =>
+					link ? (
+						<a key={icon} href={link} target="_blank" rel="noopener">
+							<button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold mr-2 py-2 px-4 border border-gray-400 rounded-md shadow-md">
+								<img
+									className="inline pr-2 h-6"
+									src={`/icons/social/${icon}-black.svg`}
+								></img>
+								{text}
+							</button>
+						</a>
+					) : (
+						""
+					)
+				)}
 			</div>
 			<div className="px-6 py-2">
 				{credentials ? (
