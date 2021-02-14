@@ -9,10 +9,11 @@ const Index = () => {
 				<section className="flex flex-col text-center mb-2 items-center">
 					<img
 						id="avatar"
+						alt="Foto de perfil"
 						src="https://res.cloudinary.com/dacfp3qlk/f_auto,c_limit,w_256,q_auto/cv.jpg"
 						className="h-32 w-32 md:h-40 md:w-40 rounded-full"
 						width={250}
-						height={260}
+						height={250}
 					></img>
 					<span className="text-2xl mt-2 lg:block md:text-4xl font-bold tracking-tight">
 						¡Hola! 👋 <br />

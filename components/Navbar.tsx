@@ -18,7 +18,13 @@ const Navbar = () => {
 				<div>
 					<Link href="/">
 						<>
-							<Image width={110} height={55} title="logo" src="logo.svg" />
+							<Image
+								width={110}
+								height={60}
+								title="logo"
+								src="logo.svg"
+								layout="fixed"
+							/>
 						</>
 					</Link>
 				</div>
