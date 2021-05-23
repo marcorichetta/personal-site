@@ -34,3 +34,11 @@ export interface IRepo {
 	description: string;
 	tags: Array<string>;
 }
+
+export interface IPost {
+    title: string;
+    summary: string; 
+    slug: string; 
+    createdAt: string;
+	tags: Array<string>;
+}

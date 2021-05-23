@@ -1,5 +1,21 @@
 {
     "compilerOptions": {
+        // Config para usar imports relativos
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": [
+                "components/*"
+            ],
+            "@/data/*": [
+                "data/*"
+            ],
+            "@/layouts/*": [
+                "layouts/*"
+            ],
+            "@/lib/*": [
+                "lib/*"
+            ],
+        },
         "allowJs": true,
         "alwaysStrict": true,
         "esModuleInterop": true,
@@ -26,6 +42,7 @@
     ],
     "include": [
         "**/*.ts",
-        "**/*.tsx"
+        "**/*.tsx",
+        "lib/mdx.js"
     ]
 }

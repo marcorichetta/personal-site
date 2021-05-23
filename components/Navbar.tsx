@@ -8,6 +8,7 @@ const Navbar = () => {
 
 	const routes = [
 		{ to: "/", title: "Inicio" },
+		{ to: "/til", title: "TIL" },
 		{ to: "/projects", title: "Proyectos" },
 		{ to: "/about", title: "Sobre mí" },
 	];

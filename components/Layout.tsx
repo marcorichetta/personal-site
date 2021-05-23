@@ -7,6 +7,12 @@ export interface ILayoutProps {
 	title: string;
 }
 
+/**
+ * Layout compartida para todo el sitio.
+ * Básicamente inserta el `<CustomHead />`, `<Navbar />` y `<Footer />`
+ * @param title Título HTML
+ * @param children Elementos JSX
+ */
 const Layout = ({ title, children }: ILayoutProps) => (
 	<>
 		<CustomHead title={title} />

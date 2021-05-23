@@ -1,0 +1,52 @@
+---
+title: "Como mockear una función custom en tests de Python"
+createdAt: Mar 11, 2021 2:36 PM
+tags: testing
+---
+
+# Mocking de una función custom
+
+### Recursos
+
+-   [https://realpython.com/python-mock-library/](https://realpython.com/python-mock-library/#conclusion)
+-   [https://gist.github.com/evansde77/45467f5a7af84d2a2d34f3fcb357449c](https://gist.github.com/evansde77/45467f5a7af84d2a2d34f3fcb357449c)
+-   [https://aaronlelevier.github.io/python-unit-testing-with-magicmock/](https://aaronlelevier.github.io/python-unit-testing-with-magicmock/)
+
+Suponiendo que existe una función `get_github_profile` en `services.py`
+
+```python
+import requests
+
+def get_github_profile(user_id: int):
+		""" Obtener datos de un usuario de Github """
+
+    headers = {"accept": "application/vnd.github.v3+json"}
+
+    response = requests.get(f"https://api.github.com/users/{user_id}", headers=headers)
+
+    user = response.json()
+
+    return user["name"]
+```
+
+Si hacemos un test que ejecute 100 veces esta función, tenemos 2 desventajas:
+
+-   Las requests HTTP a una API externa son **lentas.**
+-   Posiblemente alcancemos un límite de requests muy rápidamente.
+
+En estos casos podemos _mockear_ esa request a la API externa.
+
+```python
+def test_get_github_profile(self):
+
+		with patch('requests.get') as mock_request:
+
+				# Set del valor que va a devolver nuestra request "fake"
+        mock_request.return_value = {"user_id": 150, "name": "Katie"}
+
+				# Este resultado
+				result = get_github_profile(user_id=150)
+
+				assert result == "Katie"
+
+```
