@@ -2,21 +2,39 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import readingTime from "reading-time";
+import mdxPrism from 'mdx-prism';
 import { serialize } from "next-mdx-remote/serialize";
 
 const root = process.cwd();
 
-export async function getFiles(type) {
+export async function getFiles(type: string) {
 	return fs.readdirSync(path.join(root, "data", type));
 }
 
-export async function getFileBySlug(type, slug) {
+/**
+ * Busca en el directorio `{type}` el archivo mdx con
+ * el titulo `{slug}`, lo parsea con gray-matter, lo compila con next-mdx
+ * y lo devuelve listo para ser renderizado
+ * @param type Directorio donde buscar los archivos
+ * @param slug Slug del archivo
+ * @returns Contenido del archivo mdx formateado con gray-matter
+ */
+export async function getFileBySlug(type: string, slug: string) {
 	const source = slug
 		? fs.readFileSync(path.join(root, "data", type, `${slug}.mdx`), "utf-8")
 		: fs.readFileSync(path.join(root, "data", `${type}.mdx`), "utf-8");
 
 	const { data, content } = matter(source);
-	const mdxSource = await serialize(content);
+	const mdxSource = await serialize(content, {
+        mdxOptions: {
+            remarkPlugins: [
+                require('remark-autolink-headings'),
+                require('remark-slug'),
+                require('remark-code-titles')
+            ],
+        rehypePlugins: [mdxPrism]
+        }
+    });
 
 	return {
 		mdxSource,

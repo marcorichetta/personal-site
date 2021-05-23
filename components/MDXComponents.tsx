@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const CustomLink = (props) => {
+export interface ILink {
+	href: string;
+}
+
+const CustomLink = (props: ILink) => {
 	const href = props.href;
 	const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
 

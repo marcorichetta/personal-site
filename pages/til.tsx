@@ -3,7 +3,7 @@ import Post from "@/components/Post";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 
 const TIL = ({ posts }) => (
-	<Layout title="Blog | Marco Richetta">
+	<Layout title="Someday I Learned | Marco Richetta">
 		<section className="text-center mb-4">
 			<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">TIL</h1>
 			<p className="text-center mx-auto max-w-lg">Today I Learned</p>

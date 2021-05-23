@@ -14,7 +14,7 @@ const Navbar = () => {
 	];
 
 	return (
-		<header className="sm:flex sm:justify-between sm:items-center mx-4">
+		<header className="sm:flex sm:justify-between sm:items-center mx-4 sticky-nav">
 			<div className="flex items-center justify-between m-5">
 				<div>
 					<Link href="/">
