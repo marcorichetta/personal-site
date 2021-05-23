@@ -40,17 +40,6 @@ const CustomHead = ({ title }: ICustomHead) => (
 			property="twitter:image"
 			content="https://res.cloudinary.com/dacfp3qlk/image/upload/v1604289065/metatag.png"
 		/>
-		{/* Favicons */}
-		<link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="icons/favicon/site.webmanifest" />
-		<meta
-			name="google-site-verification"
-			content="0tR5wiUIN_xrDarPhRVBb-5Z7aI6nFMpWjxy_8zuR-E"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
 	</Head>
 );
 
