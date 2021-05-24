@@ -64,6 +64,7 @@ export async function getAllFilesFrontMatter(type) {
 		return [
 			{
 				...data,
+                tags: data.tags.split(","), // Se convierte en array de strings
 				slug: postSlug.replace(".mdx", ""),
 			},
 			...allPosts,

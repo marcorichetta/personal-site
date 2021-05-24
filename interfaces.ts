@@ -35,7 +35,9 @@ export interface IRepo {
 	tags: Array<string>;
 }
 
-export interface IPost {
+export interface IFrontMatter {
+    image: any;
+    readingTime: any;
     title: string;
     summary: string; 
     slug: string; 

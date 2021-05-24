@@ -1,20 +1,10 @@
-import Image from "next/image";
+import { IFrontMatter } from "interfaces";
 import Layout from "../components/Layout";
 
 const editUrl = (slug: string) =>
 	`https://github.com/marcorichetta/personal-site/edit/master/data/til/${slug}.mdx`;
-const discussUrl = (slug: string) =>
-	`https://mobile.twitter.com/search?q=${encodeURIComponent(
-		`https://marcorichetta.io/til/${slug}`
-	)}`;
 
-export interface IFrontMatter {
-	title: string;
-	image: string;
-	createdAt: string;
-	readingTime: { text: string };
-	slug: string;
-}
+const mailUrl = (slug: string) => `mailto:marcorichetta@gmail.com?subject=TIL - ${slug}`;
 export interface IPost {
 	children: React.ReactNode;
 	frontMatter: IFrontMatter;
@@ -36,38 +26,35 @@ export default function PostLayout({ children, frontMatter }: IPost) {
 				<h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-white dark:text-white">
 					{frontMatter.title}
 				</h1>
-				<div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
+				<div className="flex flex-row justify-between items-start w-full mt-2">
 					<div className="flex items-center">
-						<Image
-							alt="Marco Richetta"
-							height={24}
-							width={24}
-							src="cv.jpg"
-							className="rounded-full"
-						/>
-						<p className="text-sm text-white-500 min-w-32 mt-2 md:mt-0">
-							{"Marco Richetta • "}
-
+						<p className="text-base font-semibold text-gray-300 min-w-32 mt-0">
 							{frontMatter.readingTime.text}
 						</p>
 					</div>
-					<p className="text-sm text-white-700 dark:text-white-300 ml-2">
+					<p className="text-base font-semibold text-gray-300 dark:text-white-300">
 						{frontMatter.createdAt}
 					</p>
 				</div>
 				<div className="prose max-w-none w-full">{children}</div>
 				<div className="mt-8"></div>
-				<div className="text-sm text-white-700 dark:text-white-300">
+				<div className="text-sm text-white-700 dark:text-white-300 ">
 					<a
-						href={discussUrl(frontMatter.slug)}
+						className="link"
+						href={editUrl(frontMatter.slug)}
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{"Discuss on Twitter"}
+						{"Editar en GitHub"}
 					</a>
-					{` • `}
-					<a href={editUrl(frontMatter.slug)} target="_blank" rel="noopener noreferrer">
-						{"Edit on GitHub"}
+					{` | `}
+					<a
+						className="link"
+						href={mailUrl(frontMatter.slug)}
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						{"Tenés preguntas? Hablemos"}
 					</a>
 				</div>
 			</article>

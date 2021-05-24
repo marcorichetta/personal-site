@@ -1,23 +1,28 @@
-import { IPost } from "interfaces";
+import { IFrontMatter } from "interfaces";
 import Link from "next/link";
 
-const Post = ({ title, summary, slug, createdAt, tags }: IPost) => {
+const Post = ({ title, summary, slug, createdAt, tags }: IFrontMatter) => {
 	return (
-		<Link href={`/til/${slug}`}>
-			<a className="w-full">
-				<div className="mb-8 w-full">
-					<div className="flex flex-col md:flex-row justify-between">
-						<p className="md:text-xl font-medium mr-2">{tags}</p>
-
-						<h4 className="text-lg md:text-xl font-medium mb-2 w-full">{title}</h4>
-						<p className="text-gray-300 text-left md:text-right w-32 mb-4 md:mb-0">
-							{createdAt}
-						</p>
-					</div>
-					<p className="text-gray-600 dark:text-gray-400">{summary}</p>
+		<div className="py-8 flex flex-wrap md:flex-nowrap">
+			<div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col items-start">
+				<div>
+					{tags.map((t) => (
+						<span className="mr-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider">
+							{t.toUpperCase()}
+						</span>
+					))}
 				</div>
-			</a>
-		</Link>
+				<span className="mt-1 text-white">{createdAt}</span>
+			</div>
+			<Link href={`/til/${slug}`}>
+				<a className="w-full">
+					<div className="md:flex-grow">
+						<h2 className="text-2xl font-medium text-white title-font mb-2">{title}</h2>
+						<p className="leading-relaxed">{summary}</p>
+					</div>
+				</a>
+			</Link>
+		</div>
 	);
 };
 
