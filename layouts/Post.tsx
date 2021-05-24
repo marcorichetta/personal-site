@@ -55,8 +55,7 @@ export default function PostLayout({ children, frontMatter }: IPost) {
 						{frontMatter.createdAt}
 					</p>
 				</div>
-				{children}
-				<div className="prose dark:prose-dark max-w-none w-full"></div>
+				<div className="prose max-w-none w-full">{children}</div>
 				<div className="mt-8"></div>
 				<div className="text-sm text-white-700 dark:text-white-300">
 					<a

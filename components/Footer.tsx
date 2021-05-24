@@ -3,7 +3,7 @@ const Footer = () => (
 		<p>
 			Hecho con{" "}
 			<a
-				className="text-blue-300 link hover-1"
+				className="text-blue-300 link"
 				href="https://nextjs.org"
 				target="_blank"
 				rel="noopener"
@@ -12,7 +12,7 @@ const Footer = () => (
 			</a>{" "}
 			y{" "}
 			<a
-				className="text-blue-300 link hover-1"
+				className="text-blue-300 link"
 				href="https://tailwindcss.com"
 				target="_blank"
 				rel="noopener"
@@ -23,7 +23,7 @@ const Footer = () => (
 		<p className="sm:mt-1">
 			Hosteado en{" "}
 			<a
-				className="text-blue-300 link hover-1"
+				className="text-blue-300 link"
 				href="https://vercel.com/"
 				target="_blank"
 				rel="noopener"

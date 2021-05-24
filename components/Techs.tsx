@@ -20,7 +20,7 @@ const Techs = () => {
 										height={50}
 									/>
 									<a
-										className="text-blue-300 link ml-3 hover-1"
+										className="text-blue-300 link ml-3"
 										href={url}
 										target="_blank"
 										rel="noopener"
