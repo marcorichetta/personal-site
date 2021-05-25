@@ -34,3 +34,18 @@ export interface IRepo {
 	description: string;
 	tags: Array<string>;
 }
+
+export interface IFrontMatter {
+    image: any;
+    readingTime: any;
+    title: string;
+    summary: string; 
+    slug: string; 
+    createdAt: string;
+	tags: Array<string>;
+}
+
+export interface IPost {
+	frontMatter: IFrontMatter;
+	children: React.ReactNode;
+}

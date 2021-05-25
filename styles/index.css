@@ -49,11 +49,6 @@
 	filter: invert(23%) sepia(100%) saturate(2000%);
 }
 
-.highlight {
-	text-decoration: underline;
-	font-weight: bold;
-}
-
 /**
  * ----------------------------------------
  * Hover link styles - https://codepen.io/origine/pen/KVzpYm
@@ -67,7 +62,7 @@
 	font-weight: 500;
 }
 
-.hover-1:after {
+.link::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -80,7 +75,7 @@
 	transition: transform 0.3s;
 }
 
-.hover-1:hover:after {
+.link:hover::after{
 	transform-origin: bottom left;
 	transform: scaleX(1);
 }
@@ -99,23 +94,47 @@
 	background-size: 100% 88%;
 }
 
-/**
- * ----------------------------------------
- * animation focus-in-contract
- * ----------------------------------------
- */
-@keyframes focus-in-contract {
-	0% {
-		letter-spacing: 1em;
-		filter: blur(12px);
-		opacity: 0;
-	}
-	100% {
-		filter: blur(0px);
-		opacity: 1;
-	}
+
+/* 
+    Tailwind Typography https://tailwindcss.com/docs/plugins#typography 
+    permite personalizar la apariencia de contenido externo al sitio (Markdown en mi caso) 
+    # TODO - Extraer a un archivo .css aparte
+*/
+
+/* Cajita con código */
+.prose pre {
+    @apply border border-gray-200; 
 }
 
-.focus-in-contract {
-	animation: focus-in-contract 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s both;
+.prose code {
+    @apply text-green-400 px-1 py-0.5 border-gray-100 rounded-md bg-gray-800;
 }
+
+.prose img {
+  /* Don't apply styles to next/image */
+    @apply m-0;
+}
+
+.prose > :first-child {
+  /* Override removing top margin, causing layout shift */
+    margin-top: 1.25em !important;
+  /* margin-bottom: 1.25em !important; */
+}
+
+.prose a {
+	display: inline-block;
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+    /* Override Tw default margin top & bottom */
+    margin: 0 !important; 
+}
+
+/* Agregar iconito del link al lado de cada heading markdown */
+.icon::after {
+  margin-right: 0.4rem;
+  color: var(--color-gray-100);
+  content: "#";
+}
+
+@import url(dracula-prism.css);

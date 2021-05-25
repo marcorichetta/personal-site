@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
-import Techs from "../components/Techs";
-import Social from "../components/Social";
+import Layout from "@/components/Layout";
+import Techs from "@/components/Techs";
+import Social from "@/components/Social";
 
 const Index = () => {
 	return (
