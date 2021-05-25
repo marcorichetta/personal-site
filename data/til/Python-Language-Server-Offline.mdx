@@ -1,0 +1,32 @@
+---
+title: "Python Language Server Offline"
+createdAt: Aug 31, 2020 4:30 PM
+---
+
+URL: https://github.com/microsoft/python-language-server/issues/1698#issuecomment-561755630
+
+Cada vez que se actualiza, la extensión de Python para VSCode descarga el Python Language Server.
+
+Este provee ayuda para el autocompletado y algunas otras features respecto archivos de Python.
+
+Siempre me falla la descarga automática, a pesar de ser un paquete de unos miseros ~30 MB.
+
+Cuando te de el error busca la URL del paquete acá:
+
+<Image
+	alt={`Salida de la consola`}
+	src={`/TIL/Python-Language-Server-Offline/console.png`}
+	layout="responsive"
+	width={1000}
+	height={1000 / 10}
+	priority
+/>
+
+### Instalación Offline ([Source](https://github.com/microsoft/python-language-server/issues/1698))
+
+1. Abrir directorio de extensions (`Ctrl+Shift+P` > `Open Extensions Folder` en VSCode)
+2. Abrir carpeta de la extensión de Python
+3. Crear una carpeta llamada `languageServer`
+4. Renombrar el archivo descargado de `.nupkg` to `.zip`
+5. Extraer el contenido dentro de `languageServer`
+6. Darle permisos de ejecución al archivo `chmod +x Microsoft.Python.LanguageServer`

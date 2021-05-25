@@ -60,11 +60,11 @@ export async function getAllFilesFrontMatter(type) {
 		// Lee el archivo .mdx y lo convierte a JS
 		// separando el encabezado y el contenido del archivo
 		const { data } = matter(source);
-
+        
 		return [
 			{
 				...data,
-                tags: data.tags.split(","), // Se convierte en array de strings
+                tags: data.tags?.split(",") || [], // Se convierte en array de strings si existen tags
 				slug: postSlug.replace(".mdx", ""),
 			},
 			...allPosts,

@@ -44,3 +44,8 @@ export interface IFrontMatter {
     createdAt: string;
 	tags: Array<string>;
 }
+
+export interface IPost {
+	frontMatter: IFrontMatter;
+	children: React.ReactNode;
+}

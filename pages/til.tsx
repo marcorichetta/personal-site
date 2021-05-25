@@ -2,26 +2,58 @@ import Layout from "@/components/Layout";
 import Post from "@/components/Post";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 import { IFrontMatter } from "interfaces";
+import { useState } from "react";
 
-const TIL = ({ posts }) => (
-	<Layout title="Someday I Learned | Marco Richetta">
-		<section className="text-center mb-4">
-			<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">TIL</h1>
-			<h2 className="text-xl mx-auto max-w-lg">Today I Learned</h2>
-		</section>
-		<section className="overflow-hidden">
-			<div className="container px-5 py-24 mx-auto">
-				<div className="-my-8 divide-y-2 divide-gray-400">
-					{posts.map((frontMatter: IFrontMatter) => (
-						<>
+const TIL = ({ posts }) => {
+	const [searchValue, setSearchValue] = useState("");
+
+	const filteredTILPosts = posts
+		.sort((a, b) => Number(new Date(b.createdAt)) - Number(new Date(a.createdAt)))
+		.filter((post) => post.title.toLowerCase().includes(searchValue.toLowerCase()));
+
+	return (
+		<Layout title="One day I Learned | Marco Richetta">
+			<section className="text-center mb-4">
+				<h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">
+					<abbr title="Today I Learned">TIL</abbr>
+				</h1>
+				<h2 className="text-xl mx-auto max-w-lg font-semibold italic">One day I Learned</h2>
+				<p className="text-base">
+					Cosas que aprendí. <br /> Inspirado por{" "}
+					<a
+						href="https://til.simonwillison.net/"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="link"
+					>
+						Simon Willison
+					</a>
+				</p>
+			</section>
+			<section className="overflow-hidden">
+				<input
+					aria-label="Buscá artículos"
+					type="text"
+					onChange={(e) => setSearchValue(e.target.value)}
+					placeholder="Buscá artículos"
+					className="px-4 py-2 border border-gray-300 focus:ring-yellow-500 focus:border-yellow-500 block w-full rounded-md bg-white text-gray-900"
+				/>
+				<div className="container px-5 py-16 mx-auto">
+					<div className="-my-8 divide-y-2 divide-gray-400">
+						{!filteredTILPosts.length && (
+							<h3 className="text-white text-xl mb-4">
+								No hay posts que coincidan con la búsqueda.
+							</h3>
+						)}
+						{filteredTILPosts.map((frontMatter: IFrontMatter) => (
 							<Post key={frontMatter.title} {...frontMatter} />
-						</>
-					))}
+						))}
+					</div>
 				</div>
-			</div>
-		</section>
-	</Layout>
-);
+			</section>
+		</Layout>
+	);
+};
 
 export default TIL;
 

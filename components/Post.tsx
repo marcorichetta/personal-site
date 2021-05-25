@@ -12,7 +12,14 @@ const Post = ({ title, summary, slug, createdAt, tags }: IFrontMatter) => {
 						</span>
 					))}
 				</div>
-				<span className="mt-1 text-white">{createdAt}</span>
+				<span className="mt-1 text-white">
+					{/* Formateo de fecha */}
+					{Intl.DateTimeFormat("es-AR", {
+						day: "2-digit",
+						month: "long",
+						year: "numeric",
+					}).format(new Date(createdAt))}
+				</span>
 			</div>
 			<Link href={`/til/${slug}`}>
 				<a className="w-full">

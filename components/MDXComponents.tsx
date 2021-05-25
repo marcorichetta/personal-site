@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export interface ILink {
 	href: string;
+	children: React.ReactNode;
 }
 
 const CustomLink = (props: ILink) => {
