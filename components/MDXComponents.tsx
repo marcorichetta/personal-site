@@ -8,20 +8,16 @@ export interface ILink {
 
 const CustomLink = (props: ILink) => {
 	const href = props.href;
-	const isInternalLink = href && href.startsWith("/");
-	const isHeaderLink = href && href.startsWith("#");
 
-	if (isHeaderLink) {
-		return <a {...props} />;
+	const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));
+
+	if (isInternalLink) {
+		return (
+			<Link href={href}>
+				<a>{props.children}</a>
+			</Link>
+		);
 	}
-
-	// if (isInternalLink) {
-	// 	return (
-	// 		<Link href={href}>
-	// 			<a {...props} />
-	// 		</Link>
-	// 	);
-	// }
 
 	return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };
