@@ -19,18 +19,7 @@ export default [
 			Se conecta con la API de Goodreads para traer información sobre el libro seleccionado.",
 		tags: ["python", "flask", "heroku"],
     },
-    {
-		name: "Enredarte",
-		date: "Dic 2020",
-		url: null,
-		source: "https://github.com/marcorichetta/enredarte",
-		imgSource: "v1613290710/projects/enredarte.jpg",
-		description:
-			"Proyecto realizado como parte de mi proyecto final para la carrera de Analista de Sistemas. \
-            Está lejos de ser productivo pero sin dudas me sirvió para poner en práctica conocimientos de \
-            Django, diseño de base de datos y Docker como ambiente de desarrollo.",
-		tags: ["python", "django", "pytest", "docker"],
-	},
+    
     {
 		name: "Sitio Personal",
 		date: "Feb 2020",
@@ -61,6 +50,18 @@ export default [
             El frontend está hecho con Semantic UI; se maneja el estado con Redux y el routing con React-Router \
             y también contiene algunos tests E2E con Cypress ",
 		tags: ["react", "redux", "semantic-ui", "cypress"],
+	},
+    {
+		name: "Enredarte",
+		date: "Dic 2020",
+		url: null,
+		source: "https://github.com/marcorichetta/enredarte",
+		imgSource: "v1613290710/projects/enredarte.jpg",
+		description:
+			"Proyecto realizado como parte de mi proyecto final para la carrera de Analista de Sistemas. \
+            Está lejos de ser productivo pero sin dudas me sirvió para poner en práctica conocimientos de \
+            Django, diseño de base de datos y Docker como ambiente de desarrollo.",
+		tags: ["python", "django", "pytest", "docker"],
 	},
 	{
 		name: "FinanzUP",

@@ -15,7 +15,7 @@ const Projects = () => (
 			</p>
 		</section>
 
-		<div className="grid sm:grid-cols-2 gap-10 justify-center">
+		<div className="grid gap-10 justify-center lg:grid-cols-2 lg:justify-items-center">
 			{repos.map((repo: IRepo) => (
 				<Card key={repo.name} {...repo} />
 			))}

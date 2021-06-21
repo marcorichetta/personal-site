@@ -98,9 +98,9 @@ const Card = (props: IRepo) => {
 				{tags.map((t: string) => (
 					<span
 						key={t}
-						className="inline-block bg-blue-100 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+						className="mr-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider"
 					>
-						{t}
+						{t.toUpperCase()}
 					</span>
 				))}
 			</div>
