@@ -1,4 +1,3 @@
-import React from "react";
 import techs from "../data/techs";
 import { ITech } from "../interfaces";
 
@@ -14,7 +13,7 @@ const Techs = () => {
 							{stack.data.map(({ name, icon, url }: ITech) => (
 								<li className="flex items-center mb-2 sm:text-base" key={name}>
 									<img
-										alt={`${name} icon`}
+										alt={name}
 										src={`/icons/skills/${icon}`}
 										width={50}
 										height={50}
@@ -23,7 +22,7 @@ const Techs = () => {
 										className="text-blue-300 link ml-3"
 										href={url}
 										target="_blank"
-										rel="noopener"
+										rel="noopener noreferrer"
 									>
 										{name}
 									</a>

@@ -21,6 +21,7 @@ const Card = (props: IRepo) => {
 				height={100}
 				className="w-auto h-auto"
 				src={imgSource}
+				alt="Captura de pantalla del proyecto"
 			/>
 			<div className="px-6 py-4">
 				<div className="flex justify-between w-full">
@@ -47,7 +48,7 @@ const Card = (props: IRepo) => {
 							className="text-blue-500"
 							href={course.url}
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 						>
 							{course.name}
 						</a>
@@ -60,9 +61,10 @@ const Card = (props: IRepo) => {
 			<div className="px-6 py-2">
 				{buttons.map(({ icon, text, link }) =>
 					link ? (
-						<a key={icon} href={link} target="_blank" rel="noopener">
+						<a key={icon} href={link} target="_blank" rel="noopener noreferrer">
 							<button className="bg-white hover:bg-gray-200 text-gray-800 font-semibold mr-2 py-2 px-4 border border-gray-400 rounded-md shadow-md">
 								<img
+									alt={text}
 									className="inline pr-2 h-6"
 									src={`/icons/social/${icon}-black.svg`}
 								></img>

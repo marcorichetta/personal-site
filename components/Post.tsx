@@ -7,7 +7,10 @@ const Post = ({ title, summary, slug, createdAt, tags }: IFrontMatter) => {
 			<div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col items-start">
 				<div>
 					{tags.map((t) => (
-						<span className="mr-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider">
+						<span
+							key={t}
+							className="mr-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider"
+						>
 							{t.toUpperCase()}
 						</span>
 					))}

@@ -32,7 +32,7 @@ export default function NotFound() {
 							🫖 ¡Felicitaciones! Encontraste la tetera{" "}
 							{Math.floor(Math.random() * 100000000)} 🫖
 						</p>
-						<Link href="/">
+						<Link href="/" passHref>
 							<a className="inline-flex text-gray-700 bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded text-lg">
 								¡Reclama tu premio!
 							</a>

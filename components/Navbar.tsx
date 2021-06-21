@@ -17,9 +17,14 @@ const Navbar = () => {
 		<header className="sm:flex sm:justify-between sm:items-center mx-4 sticky-nav">
 			<div className="flex items-center justify-between m-5">
 				<div>
-					<Link href="/">
-						<Image width={110} height={60} title="logo" src="logo.svg" layout="fixed" />
-					</Link>
+					<Image
+						width={110}
+						height={60}
+						title="logo"
+						src="logo.svg"
+						layout="fixed"
+						alt=""
+					/>
 				</div>
 
 				<div className="sm:hidden">

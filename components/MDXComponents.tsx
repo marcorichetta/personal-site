@@ -15,13 +15,13 @@ const CustomLink = (props: ILink) => {
 		return <a {...props} />;
 	}
 
-	if (isInternalLink) {
-		return (
-			<Link href={href}>
-				<a {...props} />
-			</Link>
-		);
-	}
+	// if (isInternalLink) {
+	// 	return (
+	// 		<Link href={href}>
+	// 			<a {...props} />
+	// 		</Link>
+	// 	);
+	// }
 
 	return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };

@@ -32,7 +32,7 @@ const About = () => (
 								href="https://github.com/python/python-docs-es/commits?author=marcorichetta"
 								className="link2"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 							>
 								Python
 							</a>{" "}
@@ -41,7 +41,7 @@ const About = () => (
 								href="https://github.com/reactjs/es.reactjs.org/issues/4"
 								className="link2"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 							>
 								React
 							</a>{" "}
@@ -52,7 +52,7 @@ const About = () => (
 								href="https://forum.djangoproject.com/u/marcorichetta/summary"
 								className="link2"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 							>
 								Foro oficial de Django.
 							</a>
@@ -62,7 +62,7 @@ const About = () => (
 								href="https://github.com/django/django/pull/13534"
 								className="link2"
 								target="_blank"
-								rel="noopener"
+								rel="noopener noreferrer"
 							>
 								Django
 							</a>{" "}

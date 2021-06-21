@@ -6,7 +6,7 @@ const Footer = () => (
 				className="text-blue-300 link"
 				href="https://nextjs.org"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 			>
 				Next.js
 			</a>{" "}
@@ -15,7 +15,7 @@ const Footer = () => (
 				className="text-blue-300 link"
 				href="https://tailwindcss.com"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 			>
 				Tailwind CSS
 			</a>
@@ -26,11 +26,15 @@ const Footer = () => (
 				className="text-blue-300 link"
 				href="https://vercel.com/"
 				target="_blank"
-				rel="noopener"
+				rel="noopener noreferrer"
 			>
 				Vercel
 			</a>
-			<a href="https://github.com/marcorichetta/personal-site" target="_blank" rel="noopener">
+			<a
+				href="https://github.com/marcorichetta/personal-site"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<img
 					alt="Github Logo"
 					className="inline px-2"
