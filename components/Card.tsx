@@ -94,11 +94,11 @@ const Card = (props: IRepo) => {
 					""
 				)}
 			</div>
-			<div className="px-6 py-4">
+			<div className="flex flex-wrap px-6 py-4">
 				{tags.map((t: string) => (
 					<span
 						key={t}
-						className="mr-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider"
+						className="mr-2 mb-2 py-1 px-2 rounded bg-blue-50 text-blue-500 text-xs font-bold tracking-wider"
 					>
 						{t.toUpperCase()}
 					</span>

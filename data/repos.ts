@@ -31,7 +31,33 @@ export default [
 			proyectos con React junto a TailwindCSS.",
 		tags: ["react", "nextjs", "tailwindcss"],
 	},
+    {
+		name: "Enredarte",
+		date: "Dic 2020",
+		url: null,
+		source: "https://github.com/marcorichetta/enredarte",
+		imgSource: "v1613290710/projects/enredarte.jpg",
+		description:
+			"Proyecto realizado como parte de mi proyecto final para la carrera de Analista de Sistemas. \
+            Está lejos de ser productivo pero sin dudas me sirvió para poner en práctica conocimientos de \
+            Django, diseño de base de datos y Docker como ambiente de desarrollo.",
+		tags: ["python", "django", "pytest", "docker"],
+	},
+	
+    
 	{
+		name: "FinanzUP",
+		date: "Nov 2018",
+		url: "https://finanzup.herokuapp.com/",
+		source: "https://github.com/marcorichetta/FinanzUP",
+		imgSource: "projects/finanzup.jpg",
+		description:
+			"Calculadora financiera para plazos fijos y préstamos. Permite guardar clientes y \
+			relacionarlos con los préstamos o plazos fijos solicitados. \
+			Uno de mis primeros proyectos hechos con HTML, CSS y Javascript puro.",
+		tags: ["bootstrap", "flask", "javascript", "python"],
+	},
+    {
 		name: "React-Redux Blog",
 		course: {
 			name: "Fullstack Open",
@@ -50,30 +76,6 @@ export default [
             El frontend está hecho con Semantic UI; se maneja el estado con Redux y el routing con React-Router \
             y también contiene algunos tests E2E con Cypress ",
 		tags: ["react", "redux", "semantic-ui", "cypress"],
-	},
-    {
-		name: "Enredarte",
-		date: "Dic 2020",
-		url: null,
-		source: "https://github.com/marcorichetta/enredarte",
-		imgSource: "v1613290710/projects/enredarte.jpg",
-		description:
-			"Proyecto realizado como parte de mi proyecto final para la carrera de Analista de Sistemas. \
-            Está lejos de ser productivo pero sin dudas me sirvió para poner en práctica conocimientos de \
-            Django, diseño de base de datos y Docker como ambiente de desarrollo.",
-		tags: ["python", "django", "pytest", "docker"],
-	},
-	{
-		name: "FinanzUP",
-		date: "Nov 2018",
-		url: "https://finanzup.herokuapp.com/",
-		source: "https://github.com/marcorichetta/FinanzUP",
-		imgSource: "projects/finanzup.jpg",
-		description:
-			"Calculadora financiera para plazos fijos y préstamos. Permite guardar clientes y \
-			relacionarlos con los préstamos o plazos fijos solicitados. \
-			Uno de mis primeros proyectos hechos con HTML, CSS y Javascript puro.",
-		tags: ["bootstrap", "flask", "javascript", "python"],
 	},
 	{
 		name: "React-GraphQL Library",
