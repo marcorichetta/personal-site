@@ -13,20 +13,10 @@ export default [
 				url: "https://www.typescriptlang.org/",
 			},
 			{
-				name: "Apollo",
-				icon: "apollostack.svg",
-				url: "https://www.apollographql.com/",
-			},
-			{
 				name: "Tailwind",
 				icon: "tailwindcss1.svg",
 				url: "https://tailwindcss.com/",
-			},
-			{
-				name: "Bootstrap",
-				icon: "bootstrap.svg",
-				url: "http://getbootstrap.com/",
-			},
+			}
 		],
 	},
 	{
@@ -66,11 +56,6 @@ export default [
 				name: "Docker",
 				icon: "docker.svg",
 				url: "https://www.docker.com/",
-			},
-			{
-				name: "Socket.IO",
-				icon: "socket.io.svg",
-				url: "https://socket.io/",
 			},
 		],
 	},

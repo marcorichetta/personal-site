@@ -20,7 +20,7 @@ const TIL = ({ posts }) => {
 				<h2 className="text-xl mx-auto max-w-lg font-semibold italic mb-2">
 					One day I Learned
 				</h2>
-				<span>Cosas que aprendí</span>
+				<span>Cosas que aprendí a través del tiempo</span>
 				<br />
 				<span>
 					Inspirado por{" "}
@@ -42,7 +42,7 @@ const TIL = ({ posts }) => {
 						rel="noopener noreferrer"
 						className="link"
 					>
-						Aprender en público
+						Aprendiendo en público
 					</a>
 				</span>
 			</section>
