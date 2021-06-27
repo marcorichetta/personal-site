@@ -2,6 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Toggler from "./mobile/Toggler";
 import Image from "next/image";
+import LanguagePicker from "@/components/LanguagePicker";
 
 const Navbar = () => {
 	const [isMenuOpen, setisMenuOpen] = useState(false);
@@ -31,7 +32,6 @@ const Navbar = () => {
 					<Toggler isMenuOpen={isMenuOpen} setisMenuOpen={setisMenuOpen} />
 				</div>
 			</div>
-
 			{/* Dinamically hide the nav based on the value of isMobile */}
 			<nav
 				className={`${isMenuOpen ? "block" : "hidden"}
@@ -54,6 +54,7 @@ const Navbar = () => {
 					</Link>
 				))}
 			</nav>
+			<LanguagePicker />
 		</header>
 	);
 };
