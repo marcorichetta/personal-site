@@ -40,7 +40,7 @@ export default [
 		],
 	},
 	{
-		title: "Varios",
+		title: "Misc",
 		data: [
 			{
 				name: "Linux",

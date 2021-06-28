@@ -1,9 +1,10 @@
-import Layout from "../components/Layout";
+import CustomLink from "@/components/CustomLink";
+import Layout from "@/components/Layout";
+import Quote from "@/components/Quote";
 import Link from "next/link";
-
-import es from "../pages/locales/es";
-import en from "../pages/locales/en";
 import { useRouter } from "next/router";
+import en from "../locales/en";
+import es from "../locales/es";
 
 const About = () => {
 	const router = useRouter();
@@ -11,72 +12,60 @@ const About = () => {
 
 	const t = locale === "es" ? es : en;
 
-	const { title, first, second, third } = t.sobreMi;
+	const about = t.about;
+
 	return (
 		<Layout title="Sobre mi | Marco Richetta">
-			<div className="max-w-screen-md mx-auto">
+			<div className="max-w-screen-lg mx-auto">
 				<section className="mb-4 px-4 text-base lg:text-lg">
-					<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">
-						{title}
+					<h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">
+						{about.title}
 					</h1>
 					<div className="leading-relaxed">
-						<p className="mb-4 ">{first}</p>
+						<p className="mb-4">{about.p1}</p>
 						<p className="mb-4">
-							{second[0]}{" "}
+							{about.p2[0]}{" "}
 							<Link href="/projects">
-								<a className="link2">{second[1]}</a>
+								<a className="link">{about.p2[1]}</a>
 							</Link>{" "}
-							{second[2]}
+							{about.p2[2]} {about.p2[3]}
 						</p>
-						<span>{third}</span>
+						<p className="mb-4">{about.p3}</p>
+						<h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
+							{about.contrib.title}
+						</h2>
+						<p className="mb-2">{about.contrib.p1}</p>
 						<ul className="list-disc list-inside mb-4">
 							<li>
-								Traducción de la documentación de{" "}
-								<a
+								<CustomLink
+									text={about.contrib.links.link1}
 									href="https://github.com/python/python-docs-es/commits?author=marcorichetta"
-									className="link2"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Python
-								</a>{" "}
-								y{" "}
-								<a
-									href="https://github.com/reactjs/es.reactjs.org/issues/4"
-									className="link2"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									React
-								</a>{" "}
-								al español.
+								/>
 							</li>
 							<li>
-								<a
+								<CustomLink
+									text={about.contrib.links.link2}
 									href="https://forum.djangoproject.com/u/marcorichetta/summary"
-									className="link2"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Foro oficial de Django.
-								</a>
+								/>
 							</li>
 							<li>
-								<a
+								<CustomLink
+									text="Django"
 									href="https://github.com/django/django/pull/13534"
-									className="link2"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									Django
-								</a>{" "}
-								(Por algo se empieza 😅).
+								/>{" "}
+								{about.contrib.links.link3}
 							</li>
 						</ul>
-						<p className="mb-4">
-							Actualmente utilizo Next.js para desarrollo frontend y Django Rest
-							Framework para el backend.
-						</p>
+						<h2 className="text-lg md:text-2xl lg:text-3xl font-bold mb-2">
+							{about.interests.title}
+						</h2>
+						<ul className="list-disc list-inside mb-4">
+							{about.interests.list.map((i) => (
+								<li>{i}</li>
+							))}
+						</ul>
+
+						<Quote quote={about.quote} />
 					</div>
 				</section>
 			</div>

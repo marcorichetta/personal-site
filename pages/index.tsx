@@ -4,8 +4,8 @@ import Social from "@/components/Social";
 import Avatar from "@/components/Avatar";
 import { useRouter } from "next/router";
 
-import en from "../pages/locales/en";
-import es from "../pages/locales/es";
+import en from "../locales/en";
+import es from "../locales/es";
 
 const Index = () => {
 	const router = useRouter();
@@ -13,19 +13,20 @@ const Index = () => {
 
 	const t = locale === "es" ? es : en;
 
+	const { hi, nombre, profesion, techsHeader } = t.index;
 	return (
 		<>
 			<Layout title="Inicio | Marco Richetta">
 				<section className="flex flex-col text-center mb-2 items-center">
 					<Avatar />
 					<span className="text-2xl mt-2 lg:block md:text-4xl font-bold tracking-tight">
-						{t.hi} 👋 <br />
-						{t.nombre}
+						{hi} 👋 <br />
+						{nombre}
 					</span>
-					<span className="text-xl md:text-3xl mb-2">{t.profesion}</span>
+					<span className="text-xl md:text-3xl mb-2">{profesion}</span>
 					<Social />
 				</section>
-				<Techs />
+				<Techs title={techsHeader} />
 			</Layout>
 		</>
 	);

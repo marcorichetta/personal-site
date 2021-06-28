@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Layout from "@/components/Layout";
+import CustomLink from "@/components/CustomLink";
 import localLoader from "@/lib/localLoader";
 
 export default function NotFound() {
@@ -9,14 +10,10 @@ export default function NotFound() {
 			<section>
 				<div className="flex flex-col items-center justify-center">
 					<h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-6 text-black">
-						<a
+						<CustomLink
+							text="418 - I'm a Teapot"
 							href="https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="link2"
-						>
-							418 - I'm a Teapot
-						</a>
+						/>
 					</h1>
 					<Image
 						title="The HTCPCP server is a teapot; the resulting entity body may be short and stout"
