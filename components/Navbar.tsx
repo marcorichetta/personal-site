@@ -3,15 +3,19 @@ import Link from "next/link";
 import Toggler from "./mobile/Toggler";
 import Image from "next/image";
 import LanguagePicker from "@/components/LanguagePicker";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+	const router = useRouter();
+	const { locale } = router;
+
 	const [isMenuOpen, setisMenuOpen] = useState(false);
 
 	const routes = [
-		{ to: "/", title: "Inicio" },
+		{ to: "/", title: locale === "es" ? "Inicio" : "Home" },
 		{ to: "/til", title: "TIL" },
-		{ to: "/projects", title: "Proyectos" },
-		{ to: "/about", title: "Sobre mí" },
+		{ to: "/projects", title: locale === "es" ? "Proyectos" : "Projects" },
+		{ to: "/about", title: locale === "es" ? "Sobre mí" : "About me" },
 	];
 
 	return (
