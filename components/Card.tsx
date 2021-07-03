@@ -1,16 +1,23 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IRepo } from "../interfaces";
+import { useRouter } from "next/router";
 
 const Card = (props: IRepo) => {
+	const router = useRouter();
+	const { locale } = router;
+
+	// La description es lo único que cambia en base al locale
+	const description = locale === "es" ? props.description : props.enDescription;
+
 	// Destructuring de props
-	const { name, course, date, url, source, imgSource, credentials, description, tags } = props;
+	const { name, course, date, url, source, imgSource, credentials, tags } = props;
 
 	const [showCredentials, setshowCredentials] = useState("hidden");
 
 	const buttons = [
-		{ icon: "link", text: "Abrir", link: url },
-		{ icon: "github", text: "Fuente", link: source },
+		{ icon: "link", text: "Link", link: url },
+		{ icon: "github", text: "Source", link: source },
 	];
 
 	return (
@@ -84,7 +91,7 @@ const Card = (props: IRepo) => {
 							onClick={() => setshowCredentials("block")}
 							aria-label="Credenciales"
 						>
-							Credenciales
+							{locale === "es" ? "Credenciales" : "Credentials"}
 						</button>
 						<span className={`${showCredentials} text-gray-600`}>
 							<b>User:</b> {credentials.user}

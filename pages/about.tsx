@@ -61,7 +61,7 @@ const About = () => {
 						</h2>
 						<ul className="list-disc list-inside mb-4">
 							{about.interests.list.map((i) => (
-								<li>{i}</li>
+								<li key={i}>{i}</li>
 							))}
 						</ul>
 

@@ -5,7 +5,11 @@ export default {
 		profesion: "A Software Developer",
 		techsHeader: "Technologies",
 	},
-	projects: {},
+	projects: {
+		title: "Projects",
+		p1: "Some projects may take a few seconds to load.",
+		p2: "This is because the platform where they are hosted (Heroku) keeps them suspended while they are not being used.",
+	},
 	til: {},
 	about: {
 		title: "About me",

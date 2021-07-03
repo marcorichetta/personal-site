@@ -31,7 +31,8 @@ export interface IRepo {
 		user: string;
 		pass: string;
 	};
-	description: string;
+	description?: string;
+	enDescription?: string;
 	tags: Array<string>;
 }
 

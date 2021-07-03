@@ -14,7 +14,7 @@ const TIL = ({ posts }) => {
 	return (
 		<Layout title="One day I Learned | Marco Richetta" description="TIL | Today I Learned.">
 			<section className="text-center mb-6">
-				<h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">
+				<h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">
 					<abbr title="Today I Learned">TIL</abbr>
 				</h1>
 				<h2 className="text-xl mx-auto max-w-lg font-semibold italic mb-2">
