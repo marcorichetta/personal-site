@@ -25,8 +25,8 @@ export default {
 			"con frameworks de Python como Flask y Django, con SQlite3 y PostgreSQL como bases de datos.",
 			`Para el frontend, utilicé templates HTML (Jinja),
 			Javascript con AJAX para añadir funcionalidad extra y WebSockets para
-			consultas en tiempo real.
-            `,
+			consultas en tiempo real.`,
+			`Todo esto gracias a CS50 y CS50W, excelentes cursos gratuitos brindados por Harvard.`,
 		],
 		p3: "Actualmente utilizo Next.js para desarrollo frontend y Django Rest Framework para el backend.",
 		contrib: {
@@ -48,7 +48,7 @@ export default {
 				"Patrones de arquitectura de aplicaciones",
 			],
 		},
-		quote: `Resolver problemas con código y ayudar a las personas son 2 cosas que realmente disfruto
+		quote: `Resolver problemas con código y ayudar a las personas son dos cosas que realmente disfruto
         y mediante el open source, encontré lo mejor de los dos mundos. Me gusta ver como lo que hago
         impacta en la vida de las personas haciéndolas un poquito mejor`,
 	},

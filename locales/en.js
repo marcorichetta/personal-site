@@ -2,7 +2,7 @@ export default {
 	index: {
 		hi: "Hi!",
 		nombre: "I'm Marco",
-		profesion: "A Software Developer",
+		profesion: "Software Developer",
 		techsHeader: "Technologies",
 	},
 	projects: {
@@ -20,12 +20,12 @@ export default {
 		title: "About me",
 		p1: "I'm a web programmer from Argentina.",
 		p2: [
-			"I made some",
+			"I started making some",
 			"web apps",
 			"with Python frameworks like Flask and Django, with SQlite3 and PostgreSQL as databases.",
 			`On the frontend I used Jinja templates, Javascript with AJAX support for extra
-            functionality and Websockets for some real-time requests.
-            `,
+            functionality and Websockets for some real-time requests.`,
+			`This was all part of CS50 and CS50W, excellent free courses provided by Harvard.`,
 		],
 		p3: "Currently I'm trying Next.js for frontend and Django Rest Framework for the backend",
 		contrib: {

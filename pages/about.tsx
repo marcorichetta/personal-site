@@ -22,6 +22,8 @@ const About = () => {
 								<a className="link">{about.p2[1]}</a>
 							</Link>{" "}
 							{about.p2[2]} {about.p2[3]}
+							<br />
+							{about.p2[4]}
 						</p>
 						<p className="mb-4">{about.p3}</p>
 						<h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">

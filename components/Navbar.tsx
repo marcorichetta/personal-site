@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
 import Toggler from "./mobile/Toggler";
-import Image from "next/image";
 import LanguagePicker from "@/components/LanguagePicker";
 import { useRouter } from "next/router";
 
@@ -19,27 +18,14 @@ const Navbar = () => {
 	];
 
 	return (
-		<header className="sm:flex sm:justify-between sm:items-center mx-4 sticky-nav">
-			<div className="flex items-center justify-between m-5">
-				<div>
-					<Image
-						width={110}
-						height={60}
-						title="logo"
-						src="logo.svg"
-						layout="fixed"
-						alt=""
-					/>
-				</div>
-
-				<div className="sm:hidden">
-					<Toggler isMenuOpen={isMenuOpen} setisMenuOpen={setisMenuOpen} />
-				</div>
+		<header className="flex justify-between items-center p-8 sticky-nav w-full max-w-4xl mx-auto">
+			<div className="flex items-center m-5 sm:hidden">
+				<Toggler isMenuOpen={isMenuOpen} setisMenuOpen={setisMenuOpen} />
 			</div>
-			{/* Dinamically hide the nav based on the value of isMobile */}
+			{/* Dinamically hide the nav based on the value of isMenuOpen */}
 			<nav
 				className={`${isMenuOpen ? "block" : "hidden"}
-				sm:block text-sm md:mt-0 md:text-base`}
+                sm:flex sm:flex-wrap items-center justify-center md:m-auto text-sm md:mt-0 md:text-base`}
 			>
 				{routes.map(({ to, title }) => (
 					<Link href={to} key={title}>
