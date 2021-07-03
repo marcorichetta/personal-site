@@ -2,18 +2,11 @@ import Layout from "@/components/Layout";
 import Techs from "@/components/Techs";
 import Social from "@/components/Social";
 import Avatar from "@/components/Avatar";
-import { useRouter } from "next/router";
-
-import en from "../locales/en";
-import es from "../locales/es";
+import useLocale from "@/lib/hooks";
 
 const Index = () => {
-	const router = useRouter();
-	const { locale } = router;
+	const { hi, nombre, profesion, techsHeader } = useLocale().index;
 
-	const t = locale === "es" ? es : en;
-
-	const { hi, nombre, profesion, techsHeader } = t.index;
 	return (
 		<>
 			<Layout title="Inicio | Marco Richetta">

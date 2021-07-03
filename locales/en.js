@@ -10,7 +10,12 @@ export default {
 		p1: "Some projects may take a few seconds to load.",
 		p2: "This is because the platform where they are hosted (Heroku) keeps them suspended while they are not being used.",
 	},
-	til: {},
+	til: {
+		span1: "Things I learned through time",
+		span2: "Inspired by ",
+		span3: "Motivation?",
+		a1: "Learn in public",
+	},
 	about: {
 		title: "About me",
 		p1: "I'm a web programmer from Argentina.",

@@ -3,18 +3,10 @@ import Card from "../components/Card";
 import repos from "../data/repos";
 import { IRepo } from "../interfaces";
 
-import { useRouter } from "next/router";
-
-import en from "../locales/en";
-import es from "../locales/es";
+import useLocale from "@/lib/hooks";
 
 const Projects = () => {
-	const router = useRouter();
-	const { locale } = router;
-
-	const t = locale === "es" ? es : en;
-
-	const { title, p1, p2 } = t.projects;
+	const { title, p1, p2 } = useLocale().projects;
 
 	return (
 		<Layout title="Proyectos | Marco Richetta">
@@ -29,11 +21,7 @@ const Projects = () => {
 
 			<div className="grid gap-10 justify-center lg:grid-cols-2 lg:justify-items-center">
 				{repos.map((repo: IRepo) => (
-					<Card
-						key={repo.name}
-						description={locale === "es" ? repo.description : repo.enDescription}
-						{...repo}
-					/>
+					<Card key={repo.name} {...repo} />
 				))}
 			</div>
 		</Layout>

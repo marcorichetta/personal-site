@@ -1,18 +1,11 @@
 import CustomLink from "@/components/CustomLink";
 import Layout from "@/components/Layout";
 import Quote from "@/components/Quote";
+import useLocale from "@/lib/hooks";
 import Link from "next/link";
-import { useRouter } from "next/router";
-import en from "../locales/en";
-import es from "../locales/es";
 
 const About = () => {
-	const router = useRouter();
-	const { locale } = router;
-
-	const t = locale === "es" ? es : en;
-
-	const about = t.about;
+	const about = useLocale().about;
 
 	return (
 		<Layout title="Sobre mi | Marco Richetta">

@@ -10,7 +10,12 @@ export default {
 		p1: "Puede que los proyectos tarden unos segundos en cargar.",
 		p2: "Esto se debe a que la plataforma en donde están alojados (Heroku) los mantiene suspendidos mientras no son usados.",
 	},
-	til: {},
+	til: {
+		span1: "Cosas que aprendí a través del tiempo",
+		span2: "Inspirado por ",
+		span3: "¿Por qué hago esto?",
+		a1: "Aprender en público",
+	},
 	about: {
 		title: "Sobre mí",
 		p1: "Soy un programador del interior de Argentina.",
