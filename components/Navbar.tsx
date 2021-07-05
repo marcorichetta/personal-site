@@ -18,14 +18,14 @@ const Navbar = () => {
 	];
 
 	return (
-		<header className="flex justify-between items-center p-8 sticky-nav w-full max-w-4xl mx-auto">
+		<header className="flex justify-between items-center p-8 sticky-nav w-full container mx-auto">
 			<div className="flex items-center m-5 sm:hidden">
 				<Toggler isMenuOpen={isMenuOpen} setisMenuOpen={setisMenuOpen} />
 			</div>
 			{/* Dinamically hide the nav based on the value of isMenuOpen */}
 			<nav
 				className={`${isMenuOpen ? "block" : "hidden"}
-                sm:flex sm:flex-wrap items-center justify-center md:m-auto text-sm md:mt-0 md:text-base`}
+                items-center justify-center sm:flex sm:flex-wrap`}
 			>
 				{routes.map(({ to, title }) => (
 					<Link href={to} key={title}>
