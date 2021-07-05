@@ -1,82 +1,71 @@
-import Layout from "../components/Layout";
+import CustomLink from "@/components/CustomLink";
+import Layout from "@/components/Layout";
+import Quote from "@/components/Quote";
+import useLocale from "@/lib/hooks";
 import Link from "next/link";
 
-const About = () => (
-	<Layout title="Sobre mi | Marco Richetta">
-		<div className="max-w-screen-md mx-auto">
-			<section className="mb-4 px-4 text-base lg:text-lg">
-				<h1 className="text-3xl md:text-5xl font-bold mb-2 tracking-tighter">Sobre mí</h1>
-				<div className="leading-relaxed">
-					<p className="mb-4 ">
-						Soy un programador del interior de Córdoba (🇦🇷) y Analista de Sistemas de
-						Computación.
-					</p>
-					<p className="mb-4">
-						Desarrollé algunas{" "}
-						<Link href="/projects">
-							<a className="link2">aplicaciones</a>
-						</Link>{" "}
-						con frameworks de Python como Flask y Django, con SQlite3 y PostgreSQL como
-						bases de datos. <br /> Para el frontend, utilicé templates HTML (Jinja),
-						Javascript con AJAX para añadir funcionalidad extra y WebSockets para
-						consultas en tiempo real.
-					</p>
-					<span>
-						Me gusta contribuir a proyectos que uso o que me parecen interesantes. Por
-						ejemplo:
-					</span>
-					<ul className="list-disc list-inside mb-4">
-						<li>
-							Traducción de la documentación de{" "}
-							<a
-								href="https://github.com/python/python-docs-es/commits?author=marcorichetta"
-								className="link2"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Python
-							</a>{" "}
-							y{" "}
-							<a
-								href="https://github.com/reactjs/es.reactjs.org/issues/4"
-								className="link2"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								React
-							</a>{" "}
-							al español.
-						</li>
-						<li>
-							<a
-								href="https://forum.djangoproject.com/u/marcorichetta/summary"
-								className="link2"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Foro oficial de Django.
-							</a>
-						</li>
-						<li>
-							<a
-								href="https://github.com/django/django/pull/13534"
-								className="link2"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Django
-							</a>{" "}
-							(Por algo se empieza 😅).
-						</li>
-					</ul>
-					<p className="mb-4">
-						Actualmente utilizo Next.js para desarrollo frontend y Django Rest Framework
-						para el backend.
-					</p>
-				</div>
-			</section>
-		</div>
-	</Layout>
-);
+const About = () => {
+	const about = useLocale().about;
+
+	return (
+		<Layout title="Sobre mi | Marco Richetta">
+			<div className="max-w-screen-lg mx-auto">
+				<section className="mb-4 px-4 text-base lg:text-lg">
+					<h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">
+						{about.title}
+					</h1>
+					<div className="leading-relaxed">
+						<p className="mb-4">{about.p1}</p>
+						<p className="mb-4">
+							{about.p2[0]}{" "}
+							<Link href="/projects">
+								<a className="link">{about.p2[1]}</a>
+							</Link>{" "}
+							{about.p2[2]} {about.p2[3]}
+							<br />
+							{about.p2[4]}
+						</p>
+						<p className="mb-4">{about.p3}</p>
+						<h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
+							{about.contrib.title}
+						</h2>
+						<p className="mb-2">{about.contrib.p1}</p>
+						<ul className="list-disc list-inside mb-4">
+							<li>
+								<CustomLink
+									text={about.contrib.links.link1}
+									href="https://github.com/python/python-docs-es/commits?author=marcorichetta"
+								/>
+							</li>
+							<li>
+								<CustomLink
+									text={about.contrib.links.link2}
+									href="https://forum.djangoproject.com/u/marcorichetta/summary"
+								/>
+							</li>
+							<li>
+								<CustomLink
+									text="Django"
+									href="https://github.com/django/django/pull/13534"
+								/>{" "}
+								{about.contrib.links.link3}
+							</li>
+						</ul>
+						<h2 className="text-lg md:text-2xl lg:text-3xl font-bold mb-2">
+							{about.interests.title}
+						</h2>
+						<ul className="list-disc list-inside mb-4">
+							{about.interests.list.map((i) => (
+								<li key={i}>{i}</li>
+							))}
+						</ul>
+
+						<Quote quote={about.quote} />
+					</div>
+				</section>
+			</div>
+		</Layout>
+	);
+};
 
 export default About;

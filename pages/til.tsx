@@ -3,8 +3,11 @@ import Post from "@/components/Post";
 import { getAllFilesFrontMatter } from "@/lib/mdx";
 import { IFrontMatter } from "interfaces";
 import { useState } from "react";
+import useLocale from "@/lib/hooks";
 
 const TIL = ({ posts }) => {
+	const { span1, span2, span3, a1 } = useLocale().til;
+
 	const [searchValue, setSearchValue] = useState("");
 
 	const filteredTILPosts = posts
@@ -14,35 +17,34 @@ const TIL = ({ posts }) => {
 	return (
 		<Layout title="One day I Learned | Marco Richetta" description="TIL | Today I Learned.">
 			<section className="text-center mb-6">
-				<h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tighter">
+				<h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">
 					<abbr title="Today I Learned">TIL</abbr>
 				</h1>
 				<h2 className="text-xl mx-auto max-w-lg font-semibold italic mb-2">
 					One day I Learned
 				</h2>
-				<span>Cosas que aprendí a través del tiempo</span>
+
+				<span>{span1}</span>
+				<br />
+				<span>{span2}</span>
+				<a
+					href="https://til.simonwillison.net/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="link"
+				>
+					Simon Willison
+				</a>
 				<br />
 				<span>
-					Inspirado por{" "}
-					<a
-						href="https://til.simonwillison.net/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="link"
-					>
-						Simon Willison
-					</a>
-				</span>
-				<br />
-				<span>
-					¿Por qué hago esto? 👉&nbsp;
+					{span3} 👉&nbsp;
 					<a
 						href="https://www.swyx.io/learn-in-public/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="link"
 					>
-						Aprendiendo en público
+						{a1}
 					</a>
 				</span>
 			</section>

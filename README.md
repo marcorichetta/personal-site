@@ -4,6 +4,10 @@ Sitio personal hecho con [Next.js](https://nextjs.org/) y [Tailwind CSS](https:/
 
 ## Resumen
 
+-   `data/` - Mi propio CDN con disponibilidad de 99.9999999998%
+-   `locales/` - Traducciones de contenido estático
+-   `lib/` - Utils
+-   `public/` - Imágenes, íconos, fuente y CV.
 -   `pages/` - Home
 
     -   `index.tsx` - Home
@@ -12,10 +16,6 @@ Sitio personal hecho con [Next.js](https://nextjs.org/) y [Tailwind CSS](https:/
 
     -   `_document.tsx` - Permite modificar HTML generado por Next en el server. Yo lo uso específicamente para el `<Head />` del sitio. [Custom Document - Nextjs](https://nextjs.org/docs/advanced-features/custom-document)
 
-    -   `pages/blog/*` - Páginas del blog que cargan el contenido de `data/blog/` con [MDX](https://github.com/mdx-js/mdx).
+    -   `pages/til/*` - Páginas que cargan el contenido de `data/til/` con [MDX](https://github.com/mdx-js/mdx).
 
     -   `*` - Demás páginas estáticas
-
-## Hacé el tuyo
-
-Podés encontrar las instrucciones para comenzar un proyecto similar [acá](https://github.com/zeit/next.js/tree/canary/examples/with-tailwindcss)
