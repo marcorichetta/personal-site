@@ -20,8 +20,9 @@ export default [
 		url: "https://t.me/marcorich",
 	},
 	{
-		name: "Mira mi CV",
+		name: "Curriculum",
 		icon: "pdf",
-		url: "cv.pdf",
+		url: "CV-Marco-Richetta-ES.pdf",
+		enUrl: "CV-Marco-Richetta-EN.pdf",
 	},
 ];
