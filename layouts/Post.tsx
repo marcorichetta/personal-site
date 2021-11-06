@@ -1,10 +1,9 @@
 import { IPost } from "interfaces";
-import Layout from "../components/Layout";
+import Layout from "@/components/Layout";
+import Giscus from "@/components/Giscus";
 
 const editUrl = (slug: string) =>
 	`https://github.com/marcorichetta/personal-site/edit/master/data/til/${slug}.mdx`;
-
-const mailUrl = (slug: string) => `mailto:marcorichetta@gmail.com?subject=TIL - ${slug}`;
 
 /**
  * Layout de la página de un post individual
@@ -50,16 +49,8 @@ export default function PostLayout({ children, frontMatter }: IPost) {
 					>
 						{"Editar en GitHub"}
 					</a>
-					{` | `}
-					<a
-						className="link"
-						href={mailUrl(frontMatter.slug)}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						{"Tenés preguntas? Hablemos"}
-					</a>
 				</div>
+				<Giscus />
 			</article>
 		</Layout>
 	);

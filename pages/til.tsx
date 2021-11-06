@@ -48,7 +48,7 @@ const TIL = ({ posts }) => {
 					</a>
 				</span>
 			</section>
-			<section className="overflow-hidden">
+			<section className="overflow-hidden max-w-screen-lg mx-auto">
 				<input
 					aria-label="Buscá artículos"
 					type="text"
