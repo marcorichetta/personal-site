@@ -1,0 +1,7 @@
+{
+	"origins": ["https://marcorichetta.vercel.app"],
+	"originsRegex": [
+		"https://base-git-([A-z0-9]|-)*marcorichetta\\.vercel\\.app",
+		"http://localhost:[0-9]+"
+	]
+}
