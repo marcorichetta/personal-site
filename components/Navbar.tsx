@@ -12,7 +12,7 @@ const Navbar = () => {
 
 	const routes = [
 		{ to: "/", title: locale === "es" ? "Inicio" : "Home" },
-		{ to: "/til", title: "TIL" },
+		{ to: "https://blog.marcorichetta.vercel.app/", title: "Blog" },
 		{ to: "/projects", title: locale === "es" ? "Proyectos" : "Projects" },
 		{ to: "/about", title: locale === "es" ? "Sobre mí" : "About me" },
 	];
