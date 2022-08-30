@@ -57,6 +57,11 @@ export default [
 				icon: "docker.svg",
 				url: "https://www.docker.com/",
 			},
+			{
+				name: "Kubernetes",
+				icon: "kubernetes.svg",
+				url: "https://kubernetes.io/"
+			}
 		],
 	},
 ];
