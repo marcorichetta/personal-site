@@ -19,3 +19,20 @@ Sitio personal hecho con [Next.js](https://nextjs.org/) y [Tailwind CSS](https:/
     -   `pages/til/*` - Páginas que cargan el contenido de `data/til/` con [MDX](https://github.com/mdx-js/mdx).
 
     -   `*` - Demás páginas estáticas
+
+## Setup
+
+```shell
+# Instalar dependencias
+yarn install
+
+# Dev server
+yarn dev
+
+# Prod server
+yarn build
+yarn start
+
+# Actualizar next / react
+npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+```
