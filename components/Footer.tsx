@@ -51,7 +51,7 @@ const Footer = () => {
 				<br />
 			</p>
 			<p className="sm:mt-1">
-				<b>Marco Richetta</b> • {new Date().getFullYear()}
+				<b>Marco Richetta</b> • 2023
 			</p>
 		</footer>
 	);
