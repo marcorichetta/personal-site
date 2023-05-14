@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { useRouter } from "next/router";
+import metaImg from "public/images/metatag.png";
 
 import Head from "next/head";
 export interface ILayoutProps {
@@ -23,7 +24,7 @@ const Layout = (props: ILayoutProps) => {
 	const meta = {
 		title: "Marco Richetta - Web Developer.",
 		description: "¡Hola! Soy Marco, desarrollador de software de Córdoba, Argentina.",
-		image: "https://res.cloudinary.com/dacfp3qlk/image/upload/v1604289065/metatag.png",
+		image: { metaImg },
 		type: "website",
 		...customMeta,
 	};
@@ -46,19 +47,13 @@ const Layout = (props: ILayoutProps) => {
 				<meta property="og:title" content={meta.title} />
 				<meta property="og:url" content="https://marcorichetta.now.sh/" />
 				<meta property="og:description" content={meta.description} />
-				<meta
-					property="og:image"
-					content="https://res.cloudinary.com/dacfp3qlk/image/upload/v1604289065/metatag.png"
-				/>
+				<meta property="og:image" content={metaImg.src} />
 				{/* Twitter */}
 				<meta property="twitter:card" content="summary_large_image" />
 				<meta property="twitter:url" content="https://marcorichetta.now.sh/" />
 				<meta property="twitter:title" content={meta.title} />
 				<meta property="twitter:description" content={meta.description} />
-				<meta
-					property="twitter:image"
-					content="https://res.cloudinary.com/dacfp3qlk/image/upload/v1604289065/metatag.png"
-				/>
+				<meta property="twitter:image" content={metaImg.src} />
 				{meta.date && <meta property="article:published_time" content={meta.date} />}
 			</Head>
 			<div id="NextApp" className="flex flex-col justify-between min-h-screen text-gray-200">
