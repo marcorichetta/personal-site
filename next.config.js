@@ -7,7 +7,7 @@ module.exports = {
 		return [
 			{
 				source: "/blog",
-				destination: "blog.marcorichetta.vercel.app/",
+				destination: "https://blog.marcorichetta.vercel.app/",
 				permanent: true,
 			},
 		];

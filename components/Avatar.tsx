@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cvImg from "../public/images/cv.jpg";
+import cvImg from "public/images/cv200.jpg";
 
 const Avatar = () => {
 	return (
@@ -8,8 +8,6 @@ const Avatar = () => {
 				alt="Foto de perfil"
 				src={cvImg}
 				className="h-32 w-32 md:h-40 md:w-40 rounded-full"
-				width={250}
-				height={250}
 			/>
 		</div>
 	);
