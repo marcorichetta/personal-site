@@ -10,6 +10,7 @@
 		"url": "https://github.com/marcorichetta/personal-site.git"
 	},
 	"scripts": {
+		"lint": "next lint",
 		"dev": "next",
 		"build": "next build",
 		"start": "next start"
