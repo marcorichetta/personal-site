@@ -2,6 +2,23 @@
 
 Sitio personal hecho con [Next.js](https://nextjs.org/) y [Tailwind CSS](https://tailwindcss.com).
 
+## Setup
+
+```shell
+# Instalar dependencias
+npm install
+
+# Actualizar next / react
+npm install next@latest react@latest react-dom@latest eslint-config-next@latest
+
+# Dev server
+npm run dev
+
+# Prod server
+npm run build
+npm run start
+```
+
 ## Resumen
 
 -   `data/` - Mi propio CDN con disponibilidad de 99.9999999998%
@@ -19,3 +36,7 @@ Sitio personal hecho con [Next.js](https://nextjs.org/) y [Tailwind CSS](https:/
     -   `pages/til/*` - Páginas que cargan el contenido de `data/til/` con [MDX](https://github.com/mdx-js/mdx).
 
     -   `*` - Demás páginas estáticas
+
+```
+
+```

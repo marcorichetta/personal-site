@@ -1,6 +1,6 @@
 {
 	"name": "personal-site",
-	"version": "12.0.0",
+	"version": "13.0.0",
 	"author": {
 		"name": "Marco Richetta"
 	},
@@ -10,6 +10,7 @@
 		"url": "https://github.com/marcorichetta/personal-site.git"
 	},
 	"scripts": {
+		"lint": "next lint",
 		"dev": "next",
 		"build": "next build",
 		"start": "next start"
@@ -19,14 +20,15 @@
 		"date-fns": "^2.21.3",
 		"gray-matter": "^4.0.3",
 		"mdx-prism": "^0.3.3",
-		"next": "^12.0.3",
+		"next": "^13.4.2",
 		"next-mdx-remote": "^3.0.1",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"reading-time": "^1.3.0",
 		"remark-autolink-headings": "^6.0.1",
 		"remark-code-titles": "^0.1.2",
-		"remark-slug": "^6.0.0"
+		"remark-slug": "^6.0.0",
+		"sharp": "^0.32.1"
 	},
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^4.0.0",
@@ -34,7 +36,7 @@
 		"@types/react": "^17.0.2",
 		"autoprefixer": "^10.2.5",
 		"eslint": "^7.29.0",
-		"eslint-config-next": "^11.0.0",
+		"eslint-config-next": "^13.4.2",
 		"postcss": "^8.3.0",
 		"postcss-preset-env": "^6.7.0",
 		"rehype": "^11.0.0",

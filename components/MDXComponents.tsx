@@ -13,10 +13,10 @@ const CustomLink = (props: ILink) => {
 
 	if (isInternalLink) {
 		return (
-			<Link href={href}>
-				<a>{props.children}</a>
+            <Link href={href}>
+				{props.children}
 			</Link>
-		);
+        );
 	}
 
 	return <a target="_blank" rel="noopener noreferrer" {...props} />;

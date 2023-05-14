@@ -6,7 +6,7 @@ import localLoader from "@/lib/localLoader";
 
 export default function NotFound() {
 	return (
-		<Layout title="404 – Marco Richetta">
+        <Layout title="404 – Marco Richetta">
 			<section>
 				<div className="flex flex-col items-center justify-center">
 					<h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-6 text-black">
@@ -29,14 +29,17 @@ export default function NotFound() {
 							🫖 ¡Felicitaciones! Encontraste la tetera{" "}
 							{Math.floor(Math.random() * 100000000)} 🫖
 						</p>
-						<Link href="/" passHref>
-							<a className="inline-flex text-gray-700 bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded text-lg">
+						<Link
+                            href="/"
+                            passHref
+                            className="inline-flex text-gray-700 bg-green-400 border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded text-lg">
+							
 								¡Reclama tu premio!
-							</a>
+							
 						</Link>
 					</div>
 				</div>
 			</section>
 		</Layout>
-	);
+    );
 }
