@@ -1,6 +1,9 @@
 {
 	"name": "personal-site",
 	"version": "14.0.0",
+	"engines": {
+		"node": ">=18"
+	},
 	"author": {
 		"name": "Marco Richetta"
 	},
