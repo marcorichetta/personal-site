@@ -33,8 +33,6 @@ npm run start
 
     -   `_document.tsx` - Permite modificar HTML generado por Next en el server. Yo lo uso específicamente para el `<Head />` del sitio. [Custom Document - Nextjs](https://nextjs.org/docs/advanced-features/custom-document)
 
-    -   `pages/til/*` - Páginas que cargan el contenido de `data/til/` con [MDX](https://github.com/mdx-js/mdx).
-
     -   `*` - Demás páginas estáticas
 
 ```
