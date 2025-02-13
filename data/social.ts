@@ -22,7 +22,7 @@ export default [
 	{
 		name: "Curriculum",
 		icon: "pdf",
-		url: "CV-Marco-Richetta-ES.pdf",
-		enUrl: "CV-Marco-Richetta-EN.pdf",
+		url: "Marco_Richetta_CV_ES.pdf",
+		enUrl: "Marco_Richetta_CV_EN.pdf",
 	},
 ];
