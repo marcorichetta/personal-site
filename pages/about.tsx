@@ -2,7 +2,6 @@ import CustomLink from "@/components/CustomLink";
 import Layout from "@/components/Layout";
 import Quote from "@/components/Quote";
 import useLocale from "@/lib/hooks";
-import Link from "next/link";
 
 const About = () => {
 	const about = useLocale().about;
