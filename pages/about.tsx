@@ -8,7 +8,7 @@ const About = () => {
 	const about = useLocale().about;
 
 	return (
-        <Layout title="Sobre mi | Marco Richetta">
+		<Layout title="Sobre mi | Marco Richetta">
 			<div className="max-w-screen-lg mx-auto">
 				<section className="mb-4 px-4 text-base lg:text-lg">
 					<h1 className="text-3xl md:text-5xl font-bold mb-6 tracking-tighter">
@@ -17,10 +17,7 @@ const About = () => {
 					<div className="leading-relaxed">
 						<p className="mb-4">{about.p1}</p>
 						<p className="mb-4">
-							{about.p2[0]}{" "}
-							<Link href="/projects" className="link">
-								{about.p2[1]}
-							</Link>{" "}
+							{about.p2[0]} {about.p2[1]}
 							{about.p2[2]} {about.p2[3]}
 							<br />
 							{about.p2[4]}
@@ -65,7 +62,7 @@ const About = () => {
 				</section>
 			</div>
 		</Layout>
-    );
+	);
 };
 
 export default About;

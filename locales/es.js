@@ -20,15 +20,10 @@ export default {
 		title: "Sobre mí",
 		p1: "Soy un programador del interior de Argentina.",
 		p2: [
-			"Desarrollé algunas",
-			"aplicaciones",
-			"con frameworks de Python como Flask y Django, con SQlite3 y PostgreSQL como bases de datos.",
-			`Para el frontend, utilicé templates HTML (Jinja),
-			Javascript con AJAX para añadir funcionalidad extra y WebSockets para
-			consultas en tiempo real.`,
-			`Todo esto gracias a CS50 y CS50W, excelentes cursos gratuitos brindados por Harvard.`,
+			"Me especializo en desarrollo web, principalmente con Python/Django, pero también soy competente con Flask y FastAPI. Además, también tengo una sólida experiencia con JavaScript, React y en prácticas de DevOps como GitOps con FluxCD.",
+			"Compartir conocimiento es algo que me apasiona, por eso trato de dar charlas, escribir publicaciones o contribuir a proyectos de código abierto. Por ejemplo:",
 		],
-		p3: "Actualmente utilizo Next.js para desarrollo frontend y Django Rest Framework para el backend.",
+		p3: "",
 		contrib: {
 			title: "Contribuciones",
 			p1: "Me gusta contribuir a proyectos que uso o que me parecen interesantes.",

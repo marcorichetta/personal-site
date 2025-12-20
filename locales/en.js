@@ -18,16 +18,12 @@ export default {
 	},
 	about: {
 		title: "About me",
-		p1: "I'm a web programmer from Argentina.",
+		p1: "I'm a nerd from Córdoba, Argentina.",
 		p2: [
-			"I started making some",
-			"web apps",
-			"with Python frameworks like Flask and Django, with SQlite3 and PostgreSQL as databases.",
-			`On the frontend I used Jinja templates, Javascript with AJAX support for extra
-            functionality and Websockets for some real-time requests.`,
-			`This was all part of CS50 and CS50W, excellent free courses provided by Harvard.`,
+			"I specialize in web development, primarily using Python/Django, but I am also proficient with Flask and FastAPI. Additionally, I also have solid experience with JavaScript, React as well as in DevOps practices such as GitOps with FluxCD.",
+			"Sharing knowledge is something I'm passionate about, which is why I try to give talks, write posts, or contribute to open-source projects. For example:",
 		],
-		p3: "Currently I'm trying Next.js for frontend and Django Rest Framework for the backend",
+		p3: "",
 		contrib: {
 			title: "Contributions",
 			p1: "I enjoy contributing to projects I use or consider interesting.",

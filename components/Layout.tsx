@@ -37,20 +37,20 @@ const Layout = (props: ILayoutProps) => {
 				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 				{/* Description meta tags */}
 				<meta name="description" content={meta.description} />
-				<meta
-					property="og:url"
-					content={`https://https://https://marcorichetta.vercel.app${router.asPath}`}
-				/>
-				<link rel="canonical" href={`https://marcorichetta.vercel.app${router.asPath}`} />
+				<meta property="og:url" content={`https://marcorichetta.dev${router.asPath}`} />
+				<link rel="canonical" href={`https://marcorichetta.dev${router.asPath}`} />
 				{/* Open Graph / Facebook */}
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content={meta.title} />
-				<meta property="og:url" content="https://marcorichetta.now.sh/" />
+				<meta property="og:url" content="https://marcorichetta.dev/" />
 				<meta property="og:description" content={meta.description} />
 				<meta property="og:image" content={metaImg.src} />
 				{/* Twitter */}
 				<meta property="twitter:card" content="summary_large_image" />
-				<meta property="twitter:url" content="https://marcorichetta.now.sh/" />
+				<meta
+					property="twitter:url"
+					content={`https://marcorichetta.dev${router.asPath}`}
+				/>
 				<meta property="twitter:title" content={meta.title} />
 				<meta property="twitter:description" content={meta.description} />
 				<meta property="twitter:image" content={metaImg.src} />
