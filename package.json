@@ -2,8 +2,9 @@
 	"name": "personal-site",
 	"version": "15.0.0",
 	"engines": {
-		"node": ">=18"
+		"node": ">=22"
 	},
+	"packageManager": "pnpm@10.22.0",
 	"author": {
 		"name": "Marco Richetta"
 	},
